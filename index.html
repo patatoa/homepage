@@ -48,23 +48,6 @@
 
 <div class="row" data-equalizer>
     <div class="large-3 medium-3 column" data-equalizer-watch>
-        <h2>Work</h2>
-        <ul>
-            <li>
-                <img src="img/redcard.gif"/>
-                <a href="https://docs.redcard.com">RedCard</a>
-            </li>
-            <li>
-                <img src="img/fce2.gif"/>
-                <a href="https://secure.fcebenefits.com/Logon.aspx">FCE Benefits Login</a>
-            </li>
-            <li>
-                <img src="img/pluralsight.ico"/>
-                <a href="http://www.pluralsight.com">PluralSight</a>
-            </li>
-        </ul>
-    </div>
-    <div class="large-3 medium-3 column" data-equalizer-watch>
         <h2>Forums</h2>
         <ul>
             <li>
@@ -86,6 +69,27 @@
             <li>
                 <img src="img/spurs.ico"/>
                 <a href="http://www.spurstalk.com/forums/forumdisplay.php?f=2">Spurs Talk</a>
+            </li>
+        </ul>
+    </div>
+    <div class="large-3 medium-3 column" data-equalizer-watch>
+        <h2>Not fun</h2>
+        <ul>
+            <li>
+                <img src="img/4chan-b.ico"/>
+                <a href="https://boards.4chan.org/b/">/b/</a>
+            </li>
+            <li>
+                <img src="img/4chan-g.ico"/>
+                <a href="https://boards.4chan.org/g/">/g/</a>
+            </li>
+            <li>
+                <img src="img/pluralsight.ico"/>
+                <a href="http://www.pluralsight.com">PluralSight</a>
+            </li>
+            <li>
+                <img src="img/escapist.ico"/>
+                <a href="http://www.escapistmagazine.com/movies-and-tv/videos">Escapist</a>
             </li>
         </ul>
     </div>
@@ -167,9 +171,13 @@
 <script>
     var home = ["Home", "First things first, Amarilliss", "Good morning, Batman", "I give it a light to decent 4",
         "Only the dead can know peace from this fun", "Call your mom", "G'day, mate"];
+    var title = home[Math.floor(Math.random() * home.length)];
     $(document).foundation();
     $(document).ready(function () {
-        $('h1').text(home[Math.floor(Math.random() * home.length)])
+
+        $('h1').text(title);
+        document.title = title;
+
     });
 </script>
 </body>
