@@ -48,6 +48,7 @@
 
 <div class="row" data-equalizer>
     <div class="large-3 medium-3 column" data-equalizer-watch>
+<<<<<<< HEAD
         <h2>Work</h2>
         <ul>
             <li>
@@ -73,6 +74,8 @@
         </ul>
     </div>
     <div class="large-3 medium-3 column" data-equalizer-watch>
+=======
+>>>>>>> 9dca48c63d2da35f8b1ae94c3a0decdcc60c1a9d
         <h2>Forums</h2>
         <ul>
             <li>
@@ -94,6 +97,39 @@
             <li>
                 <img src="img/spurs.ico"/>
                 <a href="http://www.spurstalk.com/forums/forumdisplay.php?f=2">Spurs Talk</a>
+            </li>
+        </ul>
+    </div>
+    <div class="large-3 medium-3 column" data-equalizer-watch>
+        <h2>Not fun</h2>
+        <ul>
+            <li>
+                <img src="img/4chan-g.ico"/>
+                <a href="https://boards.4chan.org/mu/">/mu/</a>
+            </li>
+	    <li>
+                <img src="img/4chan-b.ico"/>
+                <a href="https://boards.4chan.org/b/">/b/</a>
+            </li>
+            <li>
+                <img src="img/4chan-g.ico"/>
+                <a href="https://boards.4chan.org/g/">/g/</a>
+            </li>
+            <li>
+                <img src="img/pluralsight.ico"/>
+                <a href="http://www.pluralsight.com">PluralSight</a>
+            </li>
+            <li>
+                <img src="img/escapist.ico"/>
+                <a href="http://www.escapistmagazine.com/movies-and-tv/videos">Escapist</a>
+            </li>
+	    <li>
+                <img src="img/gmail.ico"/>
+                <a href="https://mail.google.com">Gmail</a>
+            </li>
+	    <li>
+                <img src="img/drive.ico"/>
+                <a href="https://drive.google.com">Drive</a>
             </li>
         </ul>
     </div>
@@ -122,11 +158,11 @@
             </li>
             <li>
                 <img src="img/amazon.gif"/>
-                <a href="http://www.Amazon.com">Amazon</a>
+                <a href="http://smile.Amazon.com">Amazon</a>
             </li>
             <li>
                 <img src="img/amazonvideo.gif"/>
-                <a href="http://www.amazon.com/Prime-Instant-Video/b/ref=sd_allcat_aiv_piv?ie=UTF8&node=2676882011">Amazon
+                <a href="http://smile.amazon.com/Prime-Instant-Video/b/ref=sd_allcat_aiv_piv?ie=UTF8&node=2676882011">Amazon
                     On Demand</a>
             </li>
             <li>
@@ -179,9 +215,13 @@
 <script>
     var home = ["Home", "First things first, Amarilliss", "Good morning, Batman", "I give it a light to decent 4",
         "Only the dead can know peace from this fun", "Call your mom", "G'day, mate"];
+    var title = home[Math.floor(Math.random() * home.length)];
     $(document).foundation();
     $(document).ready(function () {
-        $('h1').text(home[Math.floor(Math.random() * home.length)])
+
+        $('h1').text(title);
+        document.title = title;
+
     });
 </script>
 </body>
