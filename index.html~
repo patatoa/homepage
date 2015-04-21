@@ -48,6 +48,37 @@
 
 <div class="row" data-equalizer>
     <div class="large-3 medium-3 column" data-equalizer-watch>
+<<<<<<< HEAD
+<<<<<<< HEAD
+        <h2>Work</h2>
+        <ul>
+            <li>
+                <img src="img/redcard.gif"/>
+                <a href="https://docs.redcard.com">RedCard</a>
+            </li>
+            <li>
+                <img src="img/fce2.gif"/>
+                <a href="https://secure.fcebenefits.com/Logon.aspx">FCE Benefits Login</a>
+            </li>
+            <li>
+                <img src="img/pluralsight.ico"/>
+                <a href="http://www.pluralsight.com">PluralSight</a>
+            </li>
+            <li>
+                <img src="img/gmail.ico"/>
+                <a href="https://mail.google.com">Gmail</a>
+            </li>
+            <li>
+                <img src="img/drive.ico"/>
+                <a href="https://drive.google.com">Drive</a>
+            </li>
+        </ul>
+    </div>
+    <div class="large-3 medium-3 column" data-equalizer-watch>
+=======
+>>>>>>> 9dca48c63d2da35f8b1ae94c3a0decdcc60c1a9d
+=======
+>>>>>>> 9dca48c63d2da35f8b1ae94c3a0decdcc60c1a9d
         <h2>Forums</h2>
         <ul>
             <li>
