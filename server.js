@@ -8,6 +8,9 @@ app.use(express.static(path.join(__dirname, "public")));
 app.get("/home/", function(request, response){
     response.sendFile(__dirname + "/public/home.html");
 });
+app.get("/work/", function(request, response){
+    response.sendFile(__dirname + "/public/work.html");
+});
 
 app.get("/", function(request, response){
     response.send("test");
