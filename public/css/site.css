@@ -1,0 +1,29 @@
+body {
+    background: darkgray;
+    font-family: Consolas, monaco, monospace;
+    color: ghostwhite;
+}
+
+h1 {
+    text-align: center;
+    padding: 5% 0 5% 0;
+    font-family: Consolas, monaco, monospace;
+}
+
+h1, h2, a {
+    color: inherit;
+    font-family: inherit;
+}
+
+.large-3, .medium-3 {
+    border-right: dashed thin #ffffff;
+    /*padding-left: 20px;*/
+}
+
+li {
+    padding: 4px 0 4px 0;
+}
+
+ul {
+    list-style-type: none;
+    }
