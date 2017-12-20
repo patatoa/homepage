@@ -6,7 +6,6 @@ $(document).foundation();
 $(document).ready(function () {
 
     $('h1').text(title);
-    document.title = title;
 
     $.getJSON("http://api.wunderground.com/api/1403823fd54de5d5/conditions/q/TX/San_Antonio.json", function(data){
         var current_temp = data.current_observation.temp_f;
