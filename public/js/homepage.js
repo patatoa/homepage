@@ -2,6 +2,9 @@ var home = ["Home", "First things first, Amarilliss", "Good morning, Batman", "I
     "Only the dead can know peace from this fun", "Call your mom", "G'day, mate"];
 var title = home[Math.floor(Math.random() * home.length)];
 
+// link is a class that defines a linkentry on the landing pages.
+// the primary motivation is to enable hotkeys and to limit the unique
+// instances of any one url.
 class link{
     constructor(id, url, hotkey, key){
         this.id = id;
@@ -64,8 +67,10 @@ $(document).foundation();
 
 $(document).ready(function () {
 
+    // set title
     $('h1').text(title);
 
+    // Populate weather div with weather underground info.
     $.getJSON("http://api.wunderground.com/api/1403823fd54de5d5/conditions/q/TX/San_Antonio.json", function(data){
         var current_temp = data.current_observation.temp_f;
         var condition = data.current_observation.weather;
@@ -75,11 +80,13 @@ $(document).ready(function () {
             $('.weather').text(weatherstring);
     }, "json");
 
+    // loop through link list and add urls (et cetera) to tagged list items.
     for(var i =0; i < linkList.length; i++){
         let link = linkList[i];
         $("#"+link.id).attr("href", link.url).append("<small>("+link.key+")</small>");
     }
 
+    // enable hotkeys.
     $(document).keyup(function(e){
         var keyCode = e.keyCode ? e.keyCode : e.which;
         var linkFilter = linkList.filter(l => l.hotkey == keyCode);
@@ -87,7 +94,7 @@ $(document).ready(function () {
             return;
         }
         var link = linkFilter[0];
-        if($("#"+link.id).length == 0){
+        if($("#"+link.id).length == 0){ //if link does not show on page, do not fire hotkey.
             return;
         }
         if (keyCode == link.hotkey){
