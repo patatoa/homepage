@@ -13,7 +13,14 @@ $(document).ready(function () {
         var current_time = data.current_observation.local_time_rfc822;
         var city = data.current_observation.display_location.city;
         var weatherstring = "Currently: " + current_temp + " and "+ condition + " in " + city + " at " + current_time;
-            $('.weather').text(weatherstring)
-    }, "json")
+            $('.weather').text(weatherstring);
+    }, "json");
+
+    $(document).keyup(function(e){
+        var keyCode = e.keyCode ? e.keyCode : e.which;
+        if (keyCode == 84){
+            window.location = "https://www.todoist.com";
+        }
+    });
 
 });
