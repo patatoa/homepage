@@ -44,6 +44,20 @@ var linkList = [
     new link("amazonVideo", "http://www.amazon.com/Prime-Instant-Video/b/ref=sd_allcat_aiv_piv?ie=UTF8&node=2676882011", 86, "v"),
     // hotkey p
     new link("pitchfork", "http://www.Pitchfork.com", 80, "p"),
+    // hotkey d
+    new link("drive", "https://drive.google.com", 68, "d"),
+    // hotkey 0
+    new link("onedrive", "https://onedrive.live.com", 48, "0"),
+    // hotkey s
+    new link("pluralsight", "http://www.pluralsight.com", 83, "s"),
+    // hotkey w
+    new link("twitter", "http://www.twitter.com", 87, "w"),
+    // hotkey e
+    new link("ebay", "http://www.ebay.com", 69, "e"),
+    // hotkey [
+    new link("pocket", "https://www.getpocket.com/", 219, "["),
+    // hotkey h
+    new link("hemingway", "http://www.hemingwayapp.com", 72, "h"),
 ];
 
 $(document).foundation();
