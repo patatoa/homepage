@@ -28,7 +28,7 @@ var linkList = [
     // hotkey y
     new link("youtube", "https://www.youtube.com", 89, "y"),
     // hotkey f
-    new link("facebook", "https://www.youtube.com", 70, "f"),
+    new link("facebook", "https://www.facebook.com", 70, "f"),
     // hotkey m
     new link("music", "https://music.google.com", 77, "m"),
     // hotkey o
