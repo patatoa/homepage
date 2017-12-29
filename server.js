@@ -17,5 +17,5 @@ app.get("/", function(request, response){
 });
 
 app.listen(port, function(){
-    console.log(__dirname);
+    console.log(`listeningat http://localhost:${port}`);
 });
