@@ -13,7 +13,7 @@ app.get("/work/", function(request, response){
 });
 
 app.get("/", function(request, response){
-    response.send("test");
+    response.sendFile(path.join(__dirname, "public", "work.html"));
 });
 
 app.listen(port, function(){
