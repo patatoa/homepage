@@ -4,6 +4,7 @@ var express = require("express");
 
 var app = express();
 app.use(express.static(path.join(__dirname, "public")));
+app.use('/content/', express.static(__dirname + '/node_modules/foundation/scss'));
 
 app.get("/home/", function(request, response){
     response.sendFile(path.join(__dirname, "public", "home.html"));
