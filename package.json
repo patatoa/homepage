@@ -11,7 +11,9 @@
     "start": "node server.js"
   },
   "dependencies": {
-    "express": "^4.16.2"
+    "express": "^4.16.2",
+    "foundation": "^4.2.1-1",
+    "path": "^0.12.7"
   },
   "repository": {
     "type": "git",
