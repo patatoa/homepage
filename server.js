@@ -6,15 +6,14 @@ var express = require("express");
 var app = express();
 app.use(
     sass({
-        src: __dirname +  '/node_modules/foundation/scss',
+        src: __dirname +  '/node_modules/foundation-sites/assets/',
         dest: __dirname + '/public/css/',
         prefix: '/css/',
         debug: true
     })
 );
 app.use(express.static(path.join(__dirname, "public")));
-app.use('/js/foundation/', express.static(__dirname + '/node_modules/foundation/js/foundation'));
-app.use('/js/shared/', express.static(__dirname + '/node_modules/foundation/js/vendor'));
+app.use('/js/foundation/', express.static(__dirname + '/node_modules/foundation-sites/js'));
 
 app.get("/home/", function(request, response){
     response.sendFile(path.join(__dirname, "public", "home.html"));
