@@ -13,7 +13,9 @@ app.use(
     })
 );
 app.use(express.static(path.join(__dirname, "public")));
-app.use('/js/foundation/', express.static(__dirname + '/node_modules/foundation-sites/js'));
+app.use('/js/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/js'));
+app.use('/css/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/css'));
+app.use('/js/', express.static(__dirname + '/node_modules/'));
 
 app.get("/home/", function(request, response){
     response.sendFile(path.join(__dirname, "public", "home.html"));
