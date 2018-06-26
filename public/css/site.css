@@ -6,7 +6,7 @@ body {
 
 h1 {
     text-align: center;
-    padding: 5% 0 5% 0;
+    padding: 2.5% 0 2.5% 0;
     font-family: Consolas, monaco, monospace;
 }
 
@@ -29,4 +29,8 @@ ul {
     }
 small{
     padding-left: .5em;
+}
+.weather{
+    padding-left: 20px;
+    padding-top: 30px;
 }
