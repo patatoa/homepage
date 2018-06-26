@@ -67,7 +67,6 @@ $(document).foundation();
 
 $(document).ready(function () {
 
-    alert('test.');
     // set title
     $('h1').text(title);
 
