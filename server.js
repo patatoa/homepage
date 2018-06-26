@@ -13,10 +13,15 @@ app.use(
     })
 );
 app.use(express.static(path.join(__dirname, "public")));
+
+//JS static content routes.
 app.use('/js/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/js'));
-app.use('/css/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/css'));
 app.use('/js/', express.static(__dirname + '/node_modules/'));
 
+//CSS static content routes.
+app.use('/css/foundation/', express.static(__dirname + '/node_modules/foundation-sites/dist/css'));
+
+//Routes for html.
 app.get("/home/", function(request, response){
     response.sendFile(path.join(__dirname, "public", "home.html"));
 });
@@ -28,6 +33,7 @@ app.get("/", function(request, response){
     response.sendFile(path.join(__dirname, "public", "work.html"));
 });
 
+// Turn on server.
 app.listen(port, function(){
     console.log(`listeningat http://localhost:${port}`);
 });

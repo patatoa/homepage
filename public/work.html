@@ -5,141 +5,139 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Home Screen</title>
     <link rel="shortcut icon" type="image/x-icon" href="/img/patatoa-black.gif"/>
-    <link rel="stylesheet" href="/css/foundation/foundation.css"/>
+    <link rel="stylesheet" href="/css/foundation/foundation.min.css"/>
     <link rel="stylesheet" href="/css/site.css"/>
-    <script src="/js/jquery/dist/jquery.js"></script>
 </head>
-<body>
+    <body>
 
-<div class="row">
-    <div class="large-12 medium-12 columns">
-        <h1>Home</h1>
-    </div>
-</div>
+        <div class="grid-x">
+            <div class="large-12 medium-12 columns">
+                <h1>Home</h1>
+            </div>
+        </div>
 
-<div class="row" data-equalizer>
-    <div class="medium-3 column" data-equalizer-watch>
-        <h2>Work</h2>
-        <ul>
-            <li>
-                <img src="/img/todoist.png"/>
-                <a id="todoist">Todoist</a>
-            </li>
-            <li>
-                <img src="/img/trello.png"/>
-                <a id="trello">Trello</a>
-            </li>
-            <li>
-                <img src="/img/pluralsight.ico"/>
-                <a id="pluralsight">PluralSight</a>
-            </li>
-            <li>
-                <img src="/img/pocket.png"/>
-                <a id="pocket">Pocket</a>
-            </li>
-            <li>
-                <img src="/img/hemingway.png"/>
-                <a id="hemingway">HemingWayApp</a>
-            </li>
-        </ul>
-    </div>
-    <div class="medium-3 column" data-equalizer-watch>
-        <h2>Personal</h2>
-        <ul>
-            <li>
-                <img src="/img/inbox.png"/>
-                <a id="inbox">Inbox</a>
-            </li>
-            <li>
-                <img src="/img/onenote.png"/>
-                <a id="onenote">OneNote</a>
-            </li>
-            <li>
-                <img src="/img/keep.png"/>
-                <a id="keep">Keep</a>
-            </li>
-            <li>
-                <img src="/img/drive.ico"/>
-                <a id="drive">Drive</a>
-            </li>
-            <li>
-                <img src="/img/onedrive.png"/>
-                <a id="onedrive">OneDrive</a>
-            </li>
-        </ul>
-    </div>
-    <div class="medium-3 column" data-equalizer-watch>
-        <h2>Forums</h2>
-        <ul>
-            <li>
-                <img src="/img/reddit-alien.gif"/>
-                <a id="reddit">Front Page</a>
-            </li>
-            <li>
-                <img src="/img/bball.gif"/>
-                <a id="r-nba">r/NBA</a>
-            </li>
-            <li>
-                <img src="/img/sa.gif"/>
-                <a href="http://forums.somethingawful.com/">Something Awful</a>
-            </li>
-            <li>
-                <img src="/img/favicon.ico"/>
-                <a href="http://forums.electricmole.net/">Electric Mole</a>
-            </li>
-            <li>
-                <img src="/img/spurs.ico"/>
-                <a href="http://www.spurstalk.com/forums/forumdisplay.php?f=2">Spurs Talk</a>
-            </li>
-        </ul>
-    </div>
-    <div class="medium-3 column" data-equalizer-watch>
-        <h2>Fun</h2>
-        <ul>
-            <li>
-                <img src="/img/google-music.gif"/>
-                <a id="music">Google Music</a>
-            </li>
-            <li>
-                <img src="/img/youtube.ico"/>
-                <a id="youtube">YouTube</a>
-            </li>
-            <li>
-                <img src="/img/facebook.gif"/>
-                <a id="facebook">Facebook</a>
-            </li>
-            <li>
-                <img src="/img\twitter.png"/>
-                <a id="twitter">Twitter</a>
-            </li>
-            <li>
-                <img src="/img/avclub.gif"/>
-                <a href="http://www.avclub.com/tv/">The AV Club</a>
-            </li>
-            <li>
-                <img src="/img/pitchfork.ico"/>
-                <a id="pitchfork">Pitchfork</a>
-            </li>
-            <li>
-                <img src="/img/amazon.gif"/>
-                <a id="amazon">Amazon</a>
-            </li>
-            <li>
-                <img src="/img/amazonvideo.gif"/>
-                <a id="amazonVideo">Amazon
-                    On Demand</a>
-            </li>
-            <li>
-                <img src="/img/ebay.gif"/>
-                <a id="ebay">eBay</a>
-            </li>
-        </ul>
-    </div>
-    <span class="weather"></span>
-</div>
-
-<script type="module" src="/js/foundation/foundation.js"></script>
-<script type="module" src="/js/homepage.js" type = "text/javascript"></script>
-</body>
-
+        <div class="grid-x" data-equalizer>
+            <div class="cell medium-3" data-equalizer-watch>
+                <h2>Work</h2>
+                <ul>
+                    <li>
+                        <img src="/img/todoist.png"/>
+                        <a id="todoist">Todoist</a>
+                    </li>
+                    <li>
+                        <img src="/img/trello.png"/>
+                        <a id="trello">Trello</a>
+                    </li>
+                    <li>
+                        <img src="/img/pluralsight.ico"/>
+                        <a id="pluralsight">PluralSight</a>
+                    </li>
+                    <li>
+                        <img src="/img/pocket.png"/>
+                        <a id="pocket">Pocket</a>
+                    </li>
+                    <li>
+                        <img src="/img/hemingway.png"/>
+                        <a id="hemingway">HemingWayApp</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-3" data-equalizer-watch>
+                <h2>Personal</h2>
+                <ul>
+                    <li>
+                        <img src="/img/inbox.png"/>
+                        <a id="inbox">Inbox</a>
+                    </li>
+                    <li>
+                        <img src="/img/onenote.png"/>
+                        <a id="onenote">OneNote</a>
+                    </li>
+                    <li>
+                        <img src="/img/keep.png"/>
+                        <a id="keep">Keep</a>
+                    </li>
+                    <li>
+                        <img src="/img/drive.ico"/>
+                        <a id="drive">Drive</a>
+                    </li>
+                    <li>
+                        <img src="/img/onedrive.png"/>
+                        <a id="onedrive">OneDrive</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-3" data-equalizer-watch>
+                <h2>Forums</h2>
+                <ul>
+                    <li>
+                        <img src="/img/reddit-alien.gif"/>
+                        <a id="reddit">Front Page</a>
+                    </li>
+                    <li>
+                        <img src="/img/bball.gif"/>
+                        <a id="r-nba">r/NBA</a>
+                    </li>
+                    <li>
+                        <img src="/img/sa.gif"/>
+                        <a href="http://forums.somethingawful.com/">Something Awful</a>
+                    </li>
+                    <li>
+                        <img src="/img/favicon.ico"/>
+                        <a href="http://forums.electricmole.net/">Electric Mole</a>
+                    </li>
+                    <li>
+                        <img src="/img/spurs.ico"/>
+                        <a href="http://www.spurstalk.com/forums/forumdisplay.php?f=2">Spurs Talk</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cell medium-3" data-equalizer-watch>
+                <h2>Fun</h2>
+                <ul>
+                    <li>
+                        <img src="/img/google-music.gif"/>
+                        <a id="music">Google Music</a>
+                    </li>
+                    <li>
+                        <img src="/img/youtube.ico"/>
+                        <a id="youtube">YouTube</a>
+                    </li>
+                    <li>
+                        <img src="/img/facebook.gif"/>
+                        <a id="facebook">Facebook</a>
+                    </li>
+                    <li>
+                        <img src="/img\twitter.png"/>
+                        <a id="twitter">Twitter</a>
+                    </li>
+                    <li>
+                        <img src="/img/avclub.gif"/>
+                        <a href="http://www.avclub.com/tv/">The AV Club</a>
+                    </li>
+                    <li>
+                        <img src="/img/pitchfork.ico"/>
+                        <a id="pitchfork">Pitchfork</a>
+                    </li>
+                    <li>
+                        <img src="/img/amazon.gif"/>
+                        <a id="amazon">Amazon</a>
+                    </li>
+                    <li>
+                        <img src="/img/amazonvideo.gif"/>
+                        <a id="amazonVideo">Amazon
+                            On Demand</a>
+                    </li>
+                    <li>
+                        <img src="/img/ebay.gif"/>
+                        <a id="ebay">eBay</a>
+                    </li>
+                </ul>
+            </div>
+            <span class="weather"></span>
+        </div>
+        <script src="/js/jquery/dist/jquery.js"></script>
+        <script type="module" src="/js/foundation/foundation.min.js"></script>
+        <script type="module" src="/js/homepage.js" type = "text/javascript"></script>
+    </body>
 </html>
