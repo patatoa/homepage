@@ -20,6 +20,6 @@ node server.js
 * foundation-sites for styling
 
 ## TO DO
--[*] Upload to Github
--[] Remove un-necessary dependencies
--[] Use a JS framework (Vue, Angular, React) to generate mark-up.
+- [*] Upload to Github
+- [ ] Remove un-necessary dependencies
+- [ ] Use a JS framework (Vue, Angular, React) to generate mark-up.
