@@ -6,9 +6,9 @@ This is a personal homepage. This contains a categeorized list of my most freque
 
 Pull. 
 ```
-`cd ~/dir/of/homepage`
-`npm install`
-`node server.js`
+cd ~/dir/of/homepage
+npm install
+node server.js
 ```
 
 ## Dependenies
@@ -20,6 +20,6 @@ Pull.
 * foundation-sites for styling
 
 ## TO DO
-[*] Upload to Github
-[] Remove un-necessary dependencies
-[] Use a JS framework (Vue, Angular, React) to generate mark-up.
+- [*] Upload to Github
+- [] Remove un-necessary dependencies
+- [] Use a JS framework (Vue, Angular, React) to generate mark-up.
