@@ -9,6 +9,7 @@ Pull.
 `cd ~/dir/of/homepage`
 `npm install`
 `node server.js`
+```
 
 ## Dependenies
 
