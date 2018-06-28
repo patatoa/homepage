@@ -7,7 +7,7 @@ This is a personal homepage. This contains a categeorized list of my most freque
 Pull. 
 ```
 `cd ~/dir/of/homepage`
-`node install`
+`npm install`
 `node server.js`
 
 ## Dependenies
