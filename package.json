@@ -1,7 +1,7 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a personal homepage. This contains a categeorized list of my most frequently visited sites. There are seeperate pages for work and home. This is uses Node Js and Express.",
   "engines": {
     "node": "8.9.1"
   },
@@ -14,15 +14,14 @@
     "express": "^4.16.3",
     "foundation-sites": "^6.4.4-rc1",
     "jquery": "^3.3.1",
-    "jsdom": "^11.11.0",
     "node-sass-middleware": "^0.11.0",
     "path": "^0.12.7"
   },
   "repository": {
     "type": "git",
-    "url": "/home/patrick/Dropbox/git repo's/homepage/"
+    "url": "https://github.com/patatoa/homepage"
   },
   "keywords": [],
-  "author": "",
+  "author": "Patatoa",
   "license": "ISC"
 }
