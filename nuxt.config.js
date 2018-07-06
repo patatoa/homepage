@@ -17,8 +17,6 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      {src: '~/node_modules/jquery/dist/jquery.js', ssr:false},
-      {src: '~/node_modules/foundation-sites/dist/js/foundation.js', ssr: false},
     ]
   },
 
@@ -49,6 +47,9 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor:['jquery',
+        'foundation-sites'
+    ],
     /*
     ** You can extend webpack config here
     */
