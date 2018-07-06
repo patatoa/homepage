@@ -1,27 +1,23 @@
 {
   "name": "homepage",
   "version": "1.0.0",
-  "description": "This is a personal homepage. This contains a categeorized list of my most frequently visited sites. There are seeperate pages for work and home. This is uses Node Js and Express.",
-  "engines": {
-    "node": "8.9.1"
-  },
-  "main": "server.js",
+  "description": "My sensational Nuxt.js project",
+  "author": "Patrick",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
+    "build": "nuxt build",
+    "start": "cross-env NODE_ENV=production node server/index.js",
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "express": "^4.16.3",
-    "foundation-sites": "^6.4.4-rc1",
+    "express": "^4.15.3",
+    "foundation-sites": "^6.5.0-rc.1",
     "jquery": "^3.3.1",
-    "node-sass-middleware": "^0.11.0",
-    "path": "^0.12.7"
+    "nuxt": "^1.0.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/patatoa/homepage"
-  },
-  "keywords": [],
-  "author": "Patatoa",
-  "license": "ISC"
+  "devDependencies": {
+    "cross-env": "^5.0.1",
+    "nodemon": "^1.11.0"
+  }
 }
