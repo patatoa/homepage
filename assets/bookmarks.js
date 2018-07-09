@@ -1,3 +1,5 @@
+/*jshint esversion: 6*/
+
 var bookmarks = [
    {
        Name: 'Inbox',
@@ -340,3 +342,19 @@ var bookmarks = [
        }
    },
 ];
+
+function GetBookmarksForPage(page){
+
+    return bookmarks.filter(bookmark => bookmark.PageSections[page]);
+}
+
+function GetBookmarkSections(bookmarkList, page){
+    
+    var listOfCategories = bookmarkList.map(bookmark => bookmark.PageSections[page]);
+
+    return listOfCategories.filter(item, i, ar => ar.indexOf(item) === i);
+}
+
+function GetBookmarksFromSections(bookmarkList, page, section){
+    return bookmarkList.filter(bookmark => bookmark.PageSections[page] === section);
+}
