@@ -345,14 +345,24 @@ var bookmarks = [
 
 function GetBookmarksForPage(page){
 
-    return bookmarks.filter(bookmark => bookmark.PageSections[page]);
+    const allBookmarks = bookmarks.filter(bookmark => bookmark.PageSections[page]);
+    const sections = GetBookmarkSections(allBookmarks, page);
+
+    let bookmarkReturnObjects = sections.map(section => {
+        return {
+            Name: section, 
+            bookmarks: GetBookmarksFromSections(allBookmarks, page, section)
+        };
+    });
+
+    return bookmarkReturnObjects;
 }
 
 function GetBookmarkSections(bookmarkList, page){
     
     var listOfCategories = bookmarkList.map(bookmark => bookmark.PageSections[page]);
 
-    return listOfCategories.filter(item, i, ar => ar.indexOf(item) === i);
+    return listOfCategories.filter((item, i, ar) => ar.indexOf(item) === i);
 }
 
 function GetBookmarksFromSections(bookmarkList, page, section){
