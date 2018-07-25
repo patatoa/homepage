@@ -7,9 +7,7 @@
     </header>
 
     <section class="grid-container">
-        <div class="grid-x" data-equalizer>
-            <nuxt/>
-        </div>
+        <nuxt/>
     </section>
 </div>
 </template>
