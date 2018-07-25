@@ -4,7 +4,7 @@
         <h2>{{ section.Name }}</h2>
         <ul>
             <li v-for="bookmark in section.bookmarks">
-                <img src="/img/inbox.png"/>
+                <img :src="bookmark.ImgUrl"/>
                 <a :href ="bookmark.Url">{{ bookmark.Name}}</a>
             </li>
         </ul>
