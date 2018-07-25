@@ -1,6 +1,6 @@
 <template>
     <div class="grid-x" data-equalizer>
-        <div class="cell medium-4" data-equalizer-watch v-for="section in sections">
+        <div v-bind:class="cssClass" data-equalizer-watch v-for="section in sections">
             <h2>{{ section.Name }}</h2>
             <ul>
                 <li v-for="bookmark in section.bookmarks">
@@ -19,7 +19,8 @@ const bookmarkSections = GetBookmarksForPage('Work');
 export default {
   data () {
       return {
-          sections: bookmarkSections
+          sections: bookmarkSections,
+          cssClass: "cell medium-" + (12 / bookmarkSections.length)
       };
   }
 }
