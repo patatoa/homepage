@@ -1,5 +1,5 @@
 <template>
-    <bookmarkGrid page="Work"></bookmarkGrid>
+    <bookmarkGrid page="Home"></bookmarkGrid>
 </template>
 
 <script>
