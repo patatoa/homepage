@@ -1,27 +1,13 @@
 <template>
-    <div class="grid-x" data-equalizer>
-        <div v-bind:class="cssClass" data-equalizer-watch v-for="section in sections">
-            <h2>{{ section.Name }}</h2>
-            <ul>
-                <li v-for="bookmark in section.bookmarks">
-                    <img :src="bookmark.ImgUrl"/>
-                    <a :href ="bookmark.Url">{{ bookmark.Name}}</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <bookmarkGrid page="Work"></bookmarkGrid>
 </template>
 
 <script>
 
-import { GetBookmarkSections, GetBookmarksForPage, GetBookmarksFromSections } from '~/assets/bookmarks.js';
-const bookmarkSections = GetBookmarksForPage('Work');
+import bookmarkGrid from "@/components/bookmark-grid";
 export default {
-  data () {
-      return {
-          sections: bookmarkSections,
-          cssClass: "cell medium-" + (12 / bookmarkSections.length)
-      };
+  components: {
+      bookmarkGrid
   }
 }
 </script>
