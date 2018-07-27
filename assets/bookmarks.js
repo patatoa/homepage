@@ -217,7 +217,7 @@ var bookmarks = [
            Label: 'g'
        },
        PageSections: {
-           Home:'Fourms',
+           Home:'Forums',
        }
    },
    {
