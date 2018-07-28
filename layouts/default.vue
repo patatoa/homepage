@@ -4,6 +4,7 @@
     <section class="grid-container">
         <nuxt/>
     </section>
+    <span class="weather"></span>
 </div>
 </template>
 

@@ -1,4 +1,5 @@
 /*jshint esversion: 6*/
+const $ = require('jquery')
 import {GetUrlForKeyCode} from '~/assets/bookmarks.js';
 function GetLinkForKey(keyEvent){
     var keyCode = keyEvent.keyCode ? keyEvent.keyCode : keyEvent.which;
@@ -24,11 +25,14 @@ function GetWeather(){
             $('.weather').text(weatherstring);
     }, "json");
 }
-$(document).ready(function () {
-    GetWeather();
+if (process.browser) {
+    const $ = require('jquery')
+    $(function() {
+        GetWeather();
 
-    $(document).keyup(function(e){
-        alert('hi');
-        GetLinkForKey(e);
-    });
-});
+        $(document).keyup(function(e){
+            alert('hi');
+            GetLinkForKey(e);
+        });
+    })
+ }
