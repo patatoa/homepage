@@ -7,12 +7,10 @@ function GetLinkForKey(keyEvent){
     if (linkFilter.length == 0){
         return;
     }
+
     var link = linkFilter[0];
-    if($("#"+link.id).length == 0){ //if link does not show on page, do not fire hotkey.
-        return;
-    }
-    if (keyCode == link.hotkey){
-        window.location = link.url;
+    if(link){ //if link does not show on page, do not fire hotkey.
+        window.location = link;
     }
 }
 function GetWeather(){
@@ -31,7 +29,6 @@ if (process.browser) {
         GetWeather();
 
         $(document).keyup(function(e){
-            alert('hi');
             GetLinkForKey(e);
         });
     })

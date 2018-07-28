@@ -370,7 +370,7 @@ function GetBookmarksFromSections(bookmarkList, page, section){
 }
 
 function GetUrlForKeyCode(keycode){
-    return bookmarks.filter(bm => bm.Hotkey.Value == keycode).map(bm => bm.Url);
+    return bookmarks.filter(bm => bm.Hotkey && bm.Hotkey.Value == keycode).map(bm => bm.Url);
 }
 
 export { GetBookmarkSections, GetBookmarksForPage, GetBookmarksFromSections, GetUrlForKeyCode};
