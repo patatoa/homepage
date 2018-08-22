@@ -8,7 +8,7 @@
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
     "build": "nuxt build",
     "start": "nuxt start",
-    "heroku-postBuild": "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "express": "^4.15.3",
