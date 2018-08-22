@@ -5,7 +5,9 @@
             <ul>
                 <li v-for="bookmark in section.bookmarks">
                     <img :src="bookmark.ImgUrl"/>
-                    <a :href ="bookmark.Url">{{ bookmark.Name}}</a>
+                    <a :href ="bookmark.Url">{{ bookmark.Name}}
+                        <small v-if="bookmark.Hotkey">({{bookmark.Hotkey.Label}})</small>
+                    </a>
                 </li>
             </ul>
         </div>
