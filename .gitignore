@@ -1,2 +1,14 @@
-node_modules/
-public/css/foundation.css
+# dependencies
+node_modules
+
+# logs
+npm-debug.log
+
+# Nuxt build
+.nuxt
+
+# Nuxt generate
+dist
+
+# IDE
+.idea
