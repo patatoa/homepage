@@ -1,0 +1,23 @@
+{
+  "name": "homepage",
+  "scripts": {
+  },
+  "env": {
+    "HOST": "0.0.0.0",
+    "NODE_ENV": "production",
+    "NPM_CONFIG_PRODUCTION": "false"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1
+    }
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
