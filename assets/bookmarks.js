@@ -55,7 +55,7 @@ var bookmarks = [
    },
    {
        Name: 'OneDrive',
-       ImgUrl: '',
+       ImgUrl: '/img/onedrive.png',
        Url: '79',
        Hotkey: {
            Value: 48,
