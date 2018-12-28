@@ -187,7 +187,7 @@ var bookmarks = [
    {
        Name: 'Slashfilm',
        ImgUrl: '/img/slashfilm.png',
-       Url: 'https://www.slasfilm.com',
+       Url: 'https://www.slashfilm.com',
        Hotkey: {
            Value: 70,
            Label: 'f'
