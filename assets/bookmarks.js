@@ -96,10 +96,6 @@ var bookmarks = [
        Name: 'PluralSight',
        ImgUrl: '/img/pluralsight.ico',
        Url: 'http://www.pluralsight.com',
-       Hotkey: {
-           Value: 83,
-           Label: 's'
-       },
        PageSections: {
            Home:'Not Fun',
            Work:'Work'
@@ -171,6 +167,15 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Pounding the Rock',
+       ImgUrl: '/img/poundingtherock.png',
+       Url: 'https://www.poundingtherock.com/',
+       PageSections: {
+           Home:'Reading',
+           Work:'Reading'
+       }
+   },
+   {
        Name: 'The AV Club',
        ImgUrl: '/img/avclub.gif',
        Url: 'http://tv.avclub.com',
@@ -180,12 +185,12 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Slasfilm',
+       Name: 'Slashfilm',
        ImgUrl: '/img/slashfilm.png',
        Url: 'https://www.slasfilm.com',
        Hotkey: {
-           Value: 83,
-           Label: 's'
+           Value: 70,
+           Label: 'f'
        },
        PageSections: {
            Home:'Reading',
@@ -253,6 +258,10 @@ var bookmarks = [
        Name: 'Spurs Talk',
        ImgUrl: '/img/spurs.ico',
        Url: 'http://www.spurstalk.com/forums/forumdisplay.php?f=2',
+       Hotkey: {
+           Value: 83,
+           Label: 's'
+       },
        PageSections: {
            Home:'Fun',
            Work:'Fun'
@@ -275,10 +284,6 @@ var bookmarks = [
        Name: 'eBay',
        ImgUrl: '/img/ebay.gif',
        Url: 'http://www.ebay.com',
-       Hotkey: {
-           Value: 69,
-           Label: 'e'
-       },
        PageSections: {
            Home:'Fun',
            Work:'Fun'
