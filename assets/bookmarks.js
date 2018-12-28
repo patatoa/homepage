@@ -128,7 +128,7 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Express Reading',
+       Name: 'Express News',
        ImgUrl: '/img/expressnews.png',
        Url: 'https://www.expressnews.com',
        Hotkey: {
@@ -231,6 +231,15 @@ var bookmarks = [
            Value: 89,
            Label: 'y'
        },
+       PageSections: {
+           Home:'Fun',
+           Work:'Fun'
+       }
+   },
+   {
+       Name: 'Escapist',
+       ImgUrl: '/img/escapist.ico',
+       Url: 'https://www.escapistmagazine.com/v2/author/bob/',
        PageSections: {
            Home:'Fun',
            Work:'Fun'
