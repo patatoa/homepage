@@ -128,7 +128,7 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Express Reading',
+       Name: 'Express News',
        ImgUrl: '/img/expressnews.png',
        Url: 'https://www.expressnews.com',
        Hotkey: {
