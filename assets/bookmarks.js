@@ -237,6 +237,15 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Escapist',
+       ImgUrl: '/img/escapist.ico',
+       Url: 'https://www.escapistmagazine.com/v2/author/bob/',
+       PageSections: {
+           Home:'Fun',
+           Work:'Fun'
+       }
+   },
+   {
        Name: 'Something Awful',
        ImgUrl: '/img/sa.gif',
        Url: 'http://forums.somethingawful.com/',
