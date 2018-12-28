@@ -119,9 +119,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Front Page',
+       Name: 'The Ringer',
        ImgUrl: '/img/reddit-alien.gif',
-       Url: 'https://www.reddit.com',
+       Url: 'https://www.theringer.com/nba',
        Hotkey: {
            Value: 82,
            Label: 'r'
@@ -132,9 +132,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'r/NBA',
+       Name: 'CBS Sports',
        ImgUrl: '/img/bball.gif',
-       Url: 'https://www.reddit.com/r/nba',
+       Url: 'https://www.cbssports.com/nba/',
        Hotkey: {
            Value: 66,
            Label: 'b'
@@ -185,74 +185,12 @@ var bookmarks = [
        }
    },
    {
-       Name: '/b/',
-       ImgUrl: '/img/4chan-g.ico',
-       Url: 'https://boards.4chan.org/b/',
-       Hotkey: {
-           Value: 52,
-           Label: '4'
-       },
-       PageSections: {
-           Home:'Forums',
-       }
-   },
-   {
-       Name: '/mu/',
-       ImgUrl: '/img/4chan-g.ico',
-       Url: 'https://boards.4chan.org/mu/',
-       Hotkey: {
-           Value: 85,
-           Label: 'u'
-       },
-       PageSections: {
-           Home:'Forums',
-       }
-   },
-   {
-       Name: '/g/',
-       ImgUrl: '/img/4chan-b.ico',
-       Url: 'https://boards.4chan.org/g/',
-       Hotkey: {
-           Value: 71,
-           Label: 'g'
-       },
-       PageSections: {
-           Home:'Forums',
-       }
-   },
-   {
        Name: 'YouTube',
        ImgUrl: '/img/youtube.ico',
        Url: 'https://www.youtube.com',
        Hotkey: {
            Value: 89,
            Label: 'y'
-       },
-       PageSections: {
-           Home:'Fun',
-           Work:'Fun'
-       }
-   },
-   {
-       Name: 'Facebook',
-       ImgUrl: '/img/facebook.gif',
-       Url: 'https://www.facebook.com',
-       Hotkey: {
-           Value: 70,
-           Label: 'f'
-       },
-       PageSections: {
-           Home:'Fun',
-           Work:'Fun'
-       }
-   },
-   {
-       Name: 'Twitter',
-       ImgUrl: '/img/twitter.png',
-       Url: 'http://www.twitter.com',
-       Hotkey: {
-           Value: 87,
-           Label: 'w'
        },
        PageSections: {
            Home:'Fun',
