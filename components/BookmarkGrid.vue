@@ -23,7 +23,7 @@ export default {
     const bookmarkSections = GetBookmarksForPage(this.page);
       return {
           sections: bookmarkSections,
-          cssClass: "cell medium-" + (12 / bookmarkSections.length)
+          cssClass: "cell medium-" + ((12 / bookmarkSections.length).toFixed(0))
       };
   },
 }

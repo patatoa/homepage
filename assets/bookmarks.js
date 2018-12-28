@@ -45,8 +45,8 @@ var bookmarks = [
        ImgUrl: '/img/drive.ico',
        Url: 'https://drive.google.com',
        Hotkey: {
-           Value: 69,
-           Label: 'e'
+           Value: 68,
+           Label: 'd'
        },
        PageSections: {
            Home:'Not Fun',
@@ -55,7 +55,7 @@ var bookmarks = [
    },
    {
        Name: 'OneDrive',
-       ImgUrl: '',
+       ImgUrl: '/img/onedrive.png',
        Url: '79',
        Hotkey: {
            Value: 48,
@@ -119,56 +119,90 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Washington Post',
+       ImgUrl: '/img/wp.png',
+       Url: 'https://www.washingtonpost.com',
+       Hotkey: {
+           Value: 87,
+           Label: 'w'
+       },
+       PageSections: {
+           Home:'Reading',
+           Work:'Reading'
+       }
+   },
+   {
+       Name: 'Express Reading',
+       ImgUrl: '/img/expressnews.png',
+       Url: 'https://www.expressnews.com',
+       Hotkey: {
+           Value: 69,
+           Label: 'e'
+       },
+       PageSections: {
+           Home:'Reading',
+           Work:'Reading'
+       }
+   },
+   {
        Name: 'The Ringer',
-       ImgUrl: '/img/reddit-alien.gif',
+       ImgUrl: '/img/theringer.png',
        Url: 'https://www.theringer.com/nba',
        Hotkey: {
            Value: 82,
            Label: 'r'
        },
        PageSections: {
-           Home:'Forums',
-           Work:'Forums'
+           Home:'Reading',
+           Work:'Reading'
        }
    },
    {
        Name: 'CBS Sports',
-       ImgUrl: '/img/bball.gif',
+       ImgUrl: '/img/cbs.png',
        Url: 'https://www.cbssports.com/nba/',
        Hotkey: {
-           Value: 66,
-           Label: 'b'
+           Value: 67,
+           Label: 'c'
        },
        PageSections: {
-           Home:'Forums',
-           Work:'Forums'
+           Home:'Reading',
+           Work:'Reading'
        }
    },
    {
-       Name: 'Something Awful',
-       ImgUrl: '/img/sa.gif',
-       Url: 'http://forums.somethingawful.com/',
+       Name: 'The AV Club',
+       ImgUrl: '/img/avclub.gif',
+       Url: 'http://tv.avclub.com',
        PageSections: {
-           Home:'Forums',
-           Work:'Forums'
+           Home:'Reading',
+           Work:'Reading'
        }
    },
    {
-       Name: 'Electric Mole',
-       ImgUrl: '/img/favicon.ico',
-       Url: 'http://forums.electricmole.net/',
+       Name: 'Slasfilm',
+       ImgUrl: '/img/slashfilm.png',
+       Url: 'https://www.slasfilm.com',
+       Hotkey: {
+           Value: 83,
+           Label: 's'
+       },
        PageSections: {
-           Home:'Forums',
-           Work:'Forums'
+           Home:'Reading',
+           Work:'Reading'
        }
    },
    {
-       Name: 'Spurs Talk',
-       ImgUrl: '/img/spurs.ico',
-       Url: 'http://www.spurstalk.com/forums/forumdisplay.php?f=2',
+       Name: 'Pitchfork',
+       ImgUrl: '/img/pitchfork.ico',
+       Url: 'http://www.Pitchfork.com',
+       Hotkey: {
+           Value: 80,
+           Label: 'p'
+       },
        PageSections: {
-           Home:'Forums',
-           Work:'Forums'
+           Home:'Reading',
+           Work:'Reading'
        }
    },
    {
@@ -198,13 +232,27 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Pitchfork',
-       ImgUrl: '/img/pitchfork.ico',
-       Url: 'http://www.Pitchfork.com',
-       Hotkey: {
-           Value: 80,
-           Label: 'p'
-       },
+       Name: 'Something Awful',
+       ImgUrl: '/img/sa.gif',
+       Url: 'http://forums.somethingawful.com/',
+       PageSections: {
+           Home:'Fun',
+           Work:'Fun'
+       }
+   },
+   {
+       Name: 'Electric Mole',
+       ImgUrl: '/img/favicon.ico',
+       Url: 'http://forums.electricmole.net/',
+       PageSections: {
+           Home:'Fun',
+           Work:'Fun'
+       }
+   },
+   {
+       Name: 'Spurs Talk',
+       ImgUrl: '/img/spurs.ico',
+       Url: 'http://www.spurstalk.com/forums/forumdisplay.php?f=2',
        PageSections: {
            Home:'Fun',
            Work:'Fun'
@@ -237,18 +285,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'The AV Club',
-       ImgUrl: '/img/avclub.gif',
-       Url: 'http://tv.avclub.com',
-       PageSections: {
-           Home:'Fun',
-           Work:'Fun'
-       }
-   },
-   {
        Name: 'Amazon On Demand',
        ImgUrl: '/img/amazonvideo.gif',
-       Url: 'amazonVideo',
+       Url: 'https://www.amazon.com/b/ref=lp_2858778011_nav_em_T1_0_4_5_1__aiv?rh=i%3Ainstant-video%2Cn%3A2858778011&ie=UTF8&node=2858778011',
        Hotkey: {
            Value: 86,
            Label: 'v'
