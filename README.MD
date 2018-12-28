@@ -22,4 +22,4 @@ node server.js
 ## TO DO
 - [x] Upload to Github
 - [x] Remove un-necessary dependencies
-- [ ] Use a JS framework (Vue, Angular, React) to generate mark-up.
+- [x] Use a JS framework (Vue, Angular, React) to generate mark-up.
