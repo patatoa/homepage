@@ -2,9 +2,9 @@
 
 var bookmarks = [
    {
-       Name: 'Inbox',
-       ImgUrl: '/img/inbox.png',
-       Url: 'https://inbox.google.com',
+       Name: 'Gmail',
+       ImgUrl: '/img/gmail.ico',
+       Url: 'https://mail.google.com',
        Hotkey: {
            Value: 73,
            Label: 'i'
@@ -56,7 +56,7 @@ var bookmarks = [
    {
        Name: 'OneDrive',
        ImgUrl: '/img/onedrive.png',
-       Url: '79',
+       Url: 'https://onedrive.live.com/',
        Hotkey: {
            Value: 48,
            Label: '0'
