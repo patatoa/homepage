@@ -80,6 +80,30 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Ops Portal (Dev)',
+       ImgUrl: '/img/phyzdata.png',
+       Url: 'https://opsportal.dev.phyzdata.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Front Desk (Dev)',
+       ImgUrl: '/img/phyzdata.png',
+       Url: 'https://frontdesk.dev.phyzdata.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Jira',
+       ImgUrl: '/img/jira.png',
+       Url: 'https://phyzdata.atlassian.net/secure/Dashboard.jspa',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Trello',
        ImgUrl: '/img/trello.png',
        Url: 'https://trello.com/',
@@ -89,7 +113,6 @@ var bookmarks = [
        },
        PageSections: {
            Home:'Not Fun',
-           Work:'Work'
        }
    },
    {
