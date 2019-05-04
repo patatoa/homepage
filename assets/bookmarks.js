@@ -96,17 +96,49 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Jira',
-       ImgUrl: '/img/jira.png',
-       Url: 'https://phyzdata.atlassian.net/secure/Dashboard.jspa',
+       Name: 'Front Desk Admin (Dev)',
+       ImgUrl: '/img/phyzdata.png',
+       Url: 'https://frontdeskadmin.dev.phyzdata.com/',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Github',
+       Name: 'Jira (.Net)',
+       ImgUrl: '/img/jira.png',
+       Url: 'https://phyzdata.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=NET',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Jira (Logi)',
+       ImgUrl: '/img/jira.png',
+       Url: 'https://phyzdata.atlassian.net/secure/RapidBoard.jspa?rapidView=6&projectKey=LOGI',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Github (Phyzdata)',
        ImgUrl: '/img/github.png',
-       Url: 'https://github.com/phyzdata',
+       Url: 'https://github.com/phyzdata/phyzdata',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Github (frontdesk)',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/phyzdata/frontdesk',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Outlook',
+       ImgUrl: '/img/outlook.png',
+       Url: 'https://outlook.office.com/mail/inbox',
        PageSections: {
            Work:'Work'
        }
@@ -120,29 +152,6 @@ var bookmarks = [
            Label: 'l'
        },
        PageSections: {
-           Home:'Not Fun',
-       }
-   },
-   {
-       Name: 'PluralSight',
-       ImgUrl: '/img/pluralsight.ico',
-       Url: 'http://www.pluralsight.com',
-       PageSections: {
-           Home:'Not Fun',
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Pocket',
-       ImgUrl: '/img/pocket.png',
-       Url: 'https://www.getpocket.com/',
-       Hotkey: {
-           Value: 219,
-           Label: '['
-       },
-       PageSections: {
-           Home:'Not Fun',
-           Work:'Work'
        }
    },
    {
@@ -349,6 +358,28 @@ var bookmarks = [
        PageSections: {
            Home:'Fun',
            Work:'Fun'
+       }
+   },
+   {
+       Name: 'PluralSight',
+       ImgUrl: '/img/pluralsight.ico',
+       Url: 'http://www.pluralsight.com',
+       PageSections: {
+           Home:'Not Fun',
+           Work:'Reading'
+       }
+   },
+   {
+       Name: 'Pocket',
+       ImgUrl: '/img/pocket.png',
+       Url: 'https://www.getpocket.com/',
+       Hotkey: {
+           Value: 219,
+           Label: '['
+       },
+       PageSections: {
+           Home:'Not Fun',
+           Work:'Reading'
        }
    },
    {
