@@ -104,6 +104,14 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Github',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/phyzdata',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Trello',
        ImgUrl: '/img/trello.png',
        Url: 'https://trello.com/',
