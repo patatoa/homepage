@@ -80,25 +80,25 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Ops Portal (Dev)',
+       Name: 'Ops Portal (UAT)',
        ImgUrl: '/img/phyzdata.png',
-       Url: 'https://opsportal.dev.phyzdata.com/',
+       Url: 'https://opsportaluat.test.phyzdata.com/',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Front Desk (Dev)',
+       Name: 'Front Desk (UAT)',
        ImgUrl: '/img/phyzdata.png',
-       Url: 'https://frontdesk.dev.phyzdata.com/',
+       Url: 'https://frontdeskuat.test.phyzdata.com/',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Front Desk Admin (Dev)',
+       Name: 'Prescriber Portal (UAT)',
        ImgUrl: '/img/phyzdata.png',
-       Url: 'https://frontdeskadmin.dev.phyzdata.com/',
+       Url: 'https://frontdeskuat.test.phyzdata.com/Prescriber',
        PageSections: {
            Work:'Work'
        }
@@ -122,7 +122,7 @@ var bookmarks = [
    {
        Name: 'Github (Phyzdata)',
        ImgUrl: '/img/github.png',
-       Url: 'https://github.com/phyzdata/phyzdata',
+       Url: 'https://github.com/phyzdata/phyzdata/pulls',
        PageSections: {
            Work:'Work'
        }
@@ -130,7 +130,7 @@ var bookmarks = [
    {
        Name: 'Github (frontdesk)',
        ImgUrl: '/img/github.png',
-       Url: 'https://github.com/phyzdata/frontdesk',
+       Url: 'https://github.com/phyzdata/frontdesk/pulls',
        PageSections: {
            Work:'Work'
        }
@@ -391,7 +391,6 @@ var bookmarks = [
            Label: 'h'
        },
        PageSections: {
-           Work:'Work'
        }
    },
 ];
