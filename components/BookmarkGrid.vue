@@ -21,6 +21,8 @@ export default {
   props: ['page'],
   data () {
     const bookmarkSections = GetBookmarksForPage(this.page);
+      bookmarkSections.filter((item) => item.Name === 'Jenkins')
+          .foreach((item, index, arr) => item.Url = "test.com");
       return {
           sections: bookmarkSections,
           cssClass: "cell medium-" + ((12 / bookmarkSections.length).toFixed(0))

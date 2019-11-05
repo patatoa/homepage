@@ -104,6 +104,14 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Jenkins',
+       ImgUrl: '/img/phyzdata.png',
+       Url: 'n',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Jira (.Net)',
        ImgUrl: '/img/jira.png',
        Url: 'https://phyzdata.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=NET',
