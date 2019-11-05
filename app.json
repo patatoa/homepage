@@ -6,7 +6,7 @@
     "HOST": "0.0.0.0",
     "NODE_ENV": "production",
     "NPM_CONFIG_PRODUCTION": "false",
-    "JENKINS_URL": "http://test.com"
+    "JENKINSURL": "http://test.com"
   },
   "formation": {
     "web": {

@@ -63,5 +63,8 @@ module.exports = {
     extend(config, ctx) {
       
     }
+  },
+  env: {
+      JENKINS_URL: 'http://google.com'
   }
 }
