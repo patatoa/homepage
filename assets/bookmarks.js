@@ -80,6 +80,22 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Ops Portal (Test)',
+       ImgUrl: '/img/phyzdata.png',
+       Url: 'https://opsportal.test.phyzdata.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Prescriber Portal (Test)',
+       ImgUrl: '/img/phyzdata.png',
+       Url: 'https://frontdesk.test.phyzdata.com/Prescriber',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Ops Portal (UAT)',
        ImgUrl: '/img/phyzdata.png',
        Url: 'https://opsportaluat.test.phyzdata.com/',
@@ -88,25 +104,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Front Desk (UAT)',
-       ImgUrl: '/img/phyzdata.png',
-       Url: 'https://frontdeskuat.test.phyzdata.com/',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
        Name: 'Prescriber Portal (UAT)',
        ImgUrl: '/img/phyzdata.png',
        Url: 'https://frontdeskuat.test.phyzdata.com/Prescriber',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Jenkins',
-       ImgUrl: '/img/phyzdata.png',
-       Url: 'n',
        PageSections: {
            Work:'Work'
        }
