@@ -144,6 +144,14 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Jenkins',
+       ImgUrl: '/img/Jenkins.png',
+       Url: 'n',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Outlook',
        ImgUrl: '/img/outlook.png',
        Url: 'https://outlook.office.com/mail/inbox',
