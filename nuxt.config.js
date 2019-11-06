@@ -65,6 +65,6 @@ module.exports = {
     }
   },
   env: {
-      JENKINS_URL: 'http://google.com'
+      JENKINS_URL: process.env.JENKINS_URL || 'http://google.com'
   }
 }
