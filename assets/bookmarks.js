@@ -357,4 +357,4 @@ function GetBookmarksFromSections(bookmarkList, page, section){
     return bookmarkList.filter(bookmark => bookmark.PageSections[page] === section);
 }
 
-export { GetBookmarkSections, GetBookmarksForPage, GetBookmarksFromSections, GetUrlForKeyCode};
+export { GetBookmarkSections, GetBookmarksForPage, GetBookmarksFromSections};
