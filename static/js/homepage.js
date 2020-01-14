@@ -1,18 +1,5 @@
 /*jshint esversion: 6*/
 const $ = require('jquery')
-import {GetUrlForKeyCode} from '~/assets/bookmarks.js';
-function GetLinkForKey(keyEvent){
-    var keyCode = keyEvent.keyCode ? keyEvent.keyCode : keyEvent.which;
-    var linkFilter = GetUrlForKeyCode(keyCode);
-    if (linkFilter.length == 0){
-        return;
-    }
-
-    var link = linkFilter[0];
-    if(link){ //if link does not show on page, do not fire hotkey.
-        window.location = link;
-    }
-}
 function GetWeather(){
     $.getJSON("https://api.wunderground.com/api/1403823fd54de5d5/conditions/q/TX/San_Antonio.json", function(data){
         var current_temp = data.current_observation.temp_f;
