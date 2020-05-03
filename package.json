@@ -11,13 +11,13 @@
     "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "express": "^4.15.3",
-    "foundation-sites": "^6.5.0-rc.1",
+    "express": "^4.17.1",
+    "foundation-sites": "^6.6.3",
     "jquery": "^3.5.0",
-    "nuxt": "^1.0.0"
+    "nuxt": "^1.4.5"
   },
   "devDependencies": {
-    "cross-env": "^5.0.1",
-    "nodemon": "^1.11.0"
+    "cross-env": "^5.2.1",
+    "nodemon": "^1.19.4"
   }
 }
