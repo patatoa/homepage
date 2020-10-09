@@ -215,9 +215,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Google Music',
-       ImgUrl: '/img/google-music.gif',
-       Url: 'https://music.google.com',
+       Name: 'YouTube Music',
+       ImgUrl: '/img/ytmusic.png',
+       Url: 'https://music.youtube.com',
        PageSections: {
            Home:'Fun',
            Work:'Fun'
