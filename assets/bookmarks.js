@@ -237,8 +237,6 @@ var bookmarks = [
        ImgUrl: '/img/escapist.ico',
        Url: 'https://www.escapistmagazine.com/v2/author/bob/',
        PageSections: {
-           Home:'Fun',
-           Work:'Fun'
        }
    },
    {
