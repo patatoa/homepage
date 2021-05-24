@@ -56,65 +56,33 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Ops Portal (Test)',
-       ImgUrl: '/img/phyzdata.png',
-       Url: 'https://opsportal.test.phyzdata.com/',
+       Name: 'Team Password',
+       ImgUrl: '/img/teampassword.png',
+       Url: 'https://app.teampassword.com/dashboard#accounts',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Prescriber Portal (Test)',
-       ImgUrl: '/img/phyzdata.png',
-       Url: 'https://frontdesk.test.phyzdata.com/Prescriber',
+       Name: 'zube',
+       ImgUrl: '/img/zube.png',
+       Url: 'https://zube.io/jungle-disk',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Ops Portal (UAT)',
-       ImgUrl: '/img/phyzdata.png',
-       Url: 'https://opsportaluat.test.phyzdata.com/',
+       Name: 'Slab',
+       ImgUrl: '/img/slab.png',
+       Url: 'https://jungledisk.slab.com/',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Prescriber Portal (UAT)',
-       ImgUrl: '/img/phyzdata.png',
-       Url: 'https://frontdeskuat.test.phyzdata.com/Prescriber',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Jira (.Net)',
-       ImgUrl: '/img/jira.png',
-       Url: 'https://phyzdata.atlassian.net/secure/RapidBoard.jspa?rapidView=7&projectKey=NET',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Jira (Logi)',
-       ImgUrl: '/img/jira.png',
-       Url: 'https://phyzdata.atlassian.net/secure/RapidBoard.jspa?rapidView=6&projectKey=LOGI',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Github (Phyzdata)',
+       Name: 'Github',
        ImgUrl: '/img/github.png',
-       Url: 'https://github.com/phyzdata/phyzdata/pulls',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Github (frontdesk)',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/phyzdata/frontdesk/pulls',
+       Url: 'https://github.com/Jungledisk',
        PageSections: {
            Work:'Work'
        }
@@ -123,14 +91,6 @@ var bookmarks = [
        Name: 'Jenkins',
        ImgUrl: '/img/Jenkins.png',
        Url: 'n',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Outlook',
-       ImgUrl: '/img/outlook.png',
-       Url: 'https://outlook.office.com/mail/inbox',
        PageSections: {
            Work:'Work'
        }
