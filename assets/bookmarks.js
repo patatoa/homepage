@@ -88,6 +88,14 @@ var bookmarks = [
        }
    },
    {
+       Name: 'DataDog',
+       ImgUrl: '/img/datadog.png',
+       Url: 'https://app.datadoghq.com/apm/home?env=production',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Jenkins',
        ImgUrl: '/img/Jenkins.png',
        Url: 'n',
@@ -145,6 +153,24 @@ var bookmarks = [
        PageSections: {
            Home:'Reading',
            Work:'Reading'
+       }
+   },
+   {
+       Name: 'Reddit',
+       ImgUrl: '/img/reddit-alien.gif',
+       Url: 'https://www.reddit.com/',
+       PageSections:{
+           Home: 'Reading',
+           Work: 'Reading'
+       }
+   },
+   {
+       Name: '/r/nba',
+       ImgUrl: '/img/bball.gif',
+       Url: 'https://www.reddit.com/r/nba',
+       PageSections:{
+           Home: 'Reading',
+           Work: 'Reading'
        }
    },
    {
@@ -224,6 +250,15 @@ var bookmarks = [
        PageSections: {
            Home:'Fun',
            Work:'Fun'
+       }
+   },
+   {
+       Name: 'Twitter',
+       ImgUrl: '/img/twitter.png',
+       Url: 'https://www.twitter.com',
+       PageSections:{
+           Home: 'Fun',
+           Work: 'Fun'
        }
    },
    {
