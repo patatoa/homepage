@@ -56,9 +56,25 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Team Password',
-       ImgUrl: '/img/teampassword.png',
-       Url: 'https://app.teampassword.com/dashboard#accounts',
+       Name: 'Github',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'DataDog',
+       ImgUrl: '/img/datadog.png',
+       Url: 'https://app.datadoghq.com/apm/home?env=production',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Google Cloud',
+       ImgUrl: '/img/gcp.png',
+       Url: 'https://console.cloud.google.com/',
        PageSections: {
            Work:'Work'
        }
@@ -80,25 +96,17 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Github',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/Jungledisk',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'DataDog',
-       ImgUrl: '/img/datadog.png',
-       Url: 'https://app.datadoghq.com/apm/home?env=production',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
        Name: 'Jenkins',
        ImgUrl: '/img/Jenkins.png',
        Url: 'n',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Team Password',
+       ImgUrl: '/img/teampassword.png',
+       Url: 'https://app.teampassword.com/dashboard#accounts',
        PageSections: {
            Work:'Work'
        }
@@ -320,6 +328,22 @@ var bookmarks = [
        ImgUrl: '/img/hemingway.png',
        Url: 'http://www.hemingwayapp.com',
        PageSections: {
+       }
+   },
+   {
+       Name: 'rTorrent',
+       ImgUrl: '/img/rutorrent.gif',
+       Url: 'https://fremicro062.xirvik.com/rtorrent/',
+       PageSections: {
+           Home:'Fun'
+       }
+   },
+   {
+       Name: 'redacted',
+       ImgUrl: '/img/redacted.png',
+       Url: 'https://redacted.ch',
+       PageSections: {
+           Home:'Fun'
        }
    },
 ];
