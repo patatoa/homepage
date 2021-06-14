@@ -56,6 +56,14 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Monday',
+       ImgUrl: '/img/monday.png',
+       Url: 'https://jungledisk-team.monday.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Github',
        ImgUrl: '/img/github.png',
        Url: 'https://github.com/Jungledisk',
@@ -64,17 +72,17 @@ var bookmarks = [
        }
    },
    {
-       Name: 'DataDog',
-       ImgUrl: '/img/datadog.png',
-       Url: 'https://app.datadoghq.com/apm/home?env=production',
+       Name: 'Google Cloud',
+       ImgUrl: '/img/gcp.png',
+       Url: 'https://console.cloud.google.com/',
        PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Google Cloud',
-       ImgUrl: '/img/gcp.png',
-       Url: 'https://console.cloud.google.com/',
+       Name: 'DataDog',
+       ImgUrl: '/img/datadog.png',
+       Url: 'https://app.datadoghq.com/apm/home?env=production',
        PageSections: {
            Work:'Work'
        }
@@ -98,7 +106,7 @@ var bookmarks = [
    {
        Name: 'Jenkins',
        ImgUrl: '/img/Jenkins.png',
-       Url: 'n',
+       Url: 'https://winbuild.jungledisk.com/',
        PageSections: {
            Work:'Work'
        }
