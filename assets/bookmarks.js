@@ -7,7 +7,47 @@ var bookmarks = [
        Url: 'https://mail.google.com',
        PageSections: {
            Home:'Not Fun',
-           Work:'Personal'
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Jira',
+       ImgUrl: '/img/jira.png',
+       Url: 'https://jungledisk-pe.atlassian.net/jira/software/projects/JD/boards/1/backlog',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Msp Portal Ui',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/Msp-Portal-Ui',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Msp Portal Api',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/Msp-Api',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Identity Server',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/IdentityServer',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Secure Dot',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/secure.jungledisk.com',
+       PageSections: {
+           Work:'Work'
        }
    },
    {
@@ -16,7 +56,6 @@ var bookmarks = [
        Url: 'https://onedrive.live.com/edit.aspx?resid=81E5ACFF337707F3!130&cid=81e5acff337707f3&app=OneNote',
        PageSections: {
            Home:'Not Fun',
-           Work:'Personal'
        }
    },
    {
@@ -25,7 +64,6 @@ var bookmarks = [
        Url: 'https://keep.google.com',
        PageSections: {
            Home:'Not Fun',
-           Work:'Personal'
        }
    },
    {
@@ -34,7 +72,6 @@ var bookmarks = [
        Url: 'https://drive.google.com',
        PageSections: {
            Home:'Not Fun',
-           Work:'Personal'
        }
    },
    {
@@ -43,7 +80,6 @@ var bookmarks = [
        Url: 'https://onedrive.live.com/',
        PageSections: {
            Home:'Not Fun',
-           Work:'Personal'
        }
    },
    {
@@ -52,23 +88,55 @@ var bookmarks = [
        Url: 'https://en.todoist.com/',
        PageSections: {
            Home:'Not Fun',
-           Work:'Personal'
-       }
-   },
-   {
-       Name: 'Monday',
-       ImgUrl: '/img/monday.png',
-       Url: 'https://jungledisk-team.monday.com/',
-       PageSections: {
            Work:'Work'
        }
    },
    {
-       Name: 'Github',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/Jungledisk',
+       Name: 'localhost:3000',
+       ImgUrl: '/img/jd.ico',
+       Url: 'http://localhost:3000',
        PageSections: {
-           Work:'Work'
+           Work:'Dev'
+       }
+   },
+   {
+       Name: 'MSP Portal (QA)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://qa-msp.jungledisk.com/',
+       PageSections: {
+           Work:'Dev'
+       }
+   },
+   {
+       Name: 'Secure Dot (QE)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://qe-secure.jungledisk.com',
+       PageSections: {
+           Work:'Dev'
+       }
+   },
+   {
+       Name: 'MSP Portal (Prod)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://msp.jungledisk.com/',
+       PageSections: {
+           Work:'Dev'
+       }
+   },
+   {
+       Name: 'Secure Dot (Prod)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://secure.jungledisk.com',
+       PageSections: {
+           Work:'Dev'
+       }
+   },
+   {
+       Name: 'Admin Tool',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://admin.jungledisk.com',
+       PageSections: {
+           Work:'Dev'
        }
    },
    {
@@ -76,7 +144,7 @@ var bookmarks = [
        ImgUrl: '/img/gcp.png',
        Url: 'https://console.cloud.google.com/',
        PageSections: {
-           Work:'Work'
+           Work:'Dev'
        }
    },
    {
@@ -84,15 +152,7 @@ var bookmarks = [
        ImgUrl: '/img/datadog.png',
        Url: 'https://app.datadoghq.com/apm/home?env=production',
        PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'zube',
-       ImgUrl: '/img/zube.png',
-       Url: 'https://zube.io/jungle-disk',
-       PageSections: {
-           Work:'Work'
+           Work:'Dev'
        }
    },
    {
@@ -100,23 +160,14 @@ var bookmarks = [
        ImgUrl: '/img/slab.png',
        Url: 'https://jungledisk.slab.com/',
        PageSections: {
-           Work:'Work'
+           Work:'Dev'
        }
    },
    {
        Name: 'Jenkins',
        ImgUrl: '/img/Jenkins.png',
-       Url: 'https://winbuild.jungledisk.com/',
+       Url: '',
        PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Team Password',
-       ImgUrl: '/img/teampassword.png',
-       Url: 'https://app.teampassword.com/dashboard#accounts',
-       PageSections: {
-           Work:'Work'
        }
    },
    {
@@ -145,6 +196,15 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Hacker News',
+       ImgUrl: '/img/hackernews.gif',
+       Url: 'https://news.ycombinator.com',
+       PageSections:{
+           Home: 'Reading',
+           Work: 'Reading'
+       }
+   },
+   {
        Name: 'The Ringer',
        ImgUrl: '/img/theringer.png',
        Url: 'https://www.theringer.com/nba',
@@ -167,8 +227,6 @@ var bookmarks = [
        ImgUrl: '/img/poundingtherock.png',
        Url: 'https://www.poundingtherock.com/',
        PageSections: {
-           Home:'Reading',
-           Work:'Reading'
        }
    },
    {
@@ -217,9 +275,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'YouTube Music',
-       ImgUrl: '/img/ytmusic.png',
-       Url: 'https://music.youtube.com',
+       Name: 'Tidal',
+       ImgUrl: '/img/tidal.png',
+       Url: 'https://tidal.com',
        PageSections: {
            Home:'Fun',
            Work:'Fun'
@@ -343,7 +401,7 @@ var bookmarks = [
        ImgUrl: '/img/rutorrent.gif',
        Url: 'https://fremicro062.xirvik.com/rtorrent/',
        PageSections: {
-           Home:'Fun'
+           Home:'Torrents'
        }
    },
    {
@@ -351,7 +409,23 @@ var bookmarks = [
        ImgUrl: '/img/redacted.png',
        Url: 'https://redacted.ch',
        PageSections: {
-           Home:'Fun'
+           Home:'Torrents'
+       }
+   },
+   {
+       Name: 'BTN',
+       ImgUrl: '/img/btn.gif',
+       Url: 'https://broadcasthe.net/index.php',
+       PageSections: {
+           Home:'Torrents'
+       }
+   },
+   {
+       Name: 'Pass The Popcorn',
+       ImgUrl: '/img/ptp.ico',
+       Url: 'https://passthepopcorn.me/index.php',
+       PageSections: {
+           Home:'Torrents'
        }
    },
 ];
