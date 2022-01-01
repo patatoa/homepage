@@ -55,7 +55,6 @@ var bookmarks = [
        ImgUrl: '/img/onenote.png',
        Url: 'https://onedrive.live.com/edit.aspx?resid=81E5ACFF337707F3!130&cid=81e5acff337707f3&app=OneNote',
        PageSections: {
-           Home:'Not Fun',
        }
    },
    {
@@ -63,7 +62,6 @@ var bookmarks = [
        ImgUrl: '/img/keep.png',
        Url: 'https://keep.google.com',
        PageSections: {
-           Home:'Not Fun',
        }
    },
    {
@@ -71,7 +69,6 @@ var bookmarks = [
        ImgUrl: '/img/drive.ico',
        Url: 'https://drive.google.com',
        PageSections: {
-           Home:'Not Fun',
        }
    },
    {
@@ -79,13 +76,21 @@ var bookmarks = [
        ImgUrl: '/img/onedrive.png',
        Url: 'https://onedrive.live.com/',
        PageSections: {
-           Home:'Not Fun',
        }
    },
    {
        Name: 'Todoist',
        ImgUrl: '/img/todoist.png',
        Url: 'https://en.todoist.com/',
+       PageSections: {
+           Home:'Not Fun',
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Zenkit',
+       ImgUrl: '/img/zenkit.png',
+       Url: 'https://projects.zenkit.com/overview',
        PageSections: {
            Home:'Not Fun',
            Work:'Work'
