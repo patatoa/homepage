@@ -39,6 +39,7 @@ module.exports = {
   */
   plugins: [
       //{ src: '~/static/js/homepage.js', ssr: false},
+      { src: '~/node_modules/jquery/dist/jquery.js', ssr: false},
       { src: '~/node_modules/foundation-sites/dist/js/foundation.js', ssr: false},
 
   ],
@@ -54,6 +55,7 @@ module.exports = {
   */
   build: {
     vendor:[
+        'jquery',
         'foundation-sites'
     ],
     /*
