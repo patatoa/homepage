@@ -16,7 +16,7 @@
     "nuxt": "^2.12.2"
   },
   "devDependencies": {
-    "cross-env": "^5.2.1",
-    "nodemon": "^1.19.4"
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.15"
   }
 }
