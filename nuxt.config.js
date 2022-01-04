@@ -38,8 +38,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-      { src: '~/static/js/homepage.js', ssr: false},
-      { src: '~/node_modules/jquery/dist/jquery.js', ssr: false},
+      //{ src: '~/static/js/homepage.js', ssr: false},
       { src: '~/node_modules/foundation-sites/dist/js/foundation.js', ssr: false},
 
   ],
@@ -54,7 +53,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor:['jquery',
+    vendor:[
         'foundation-sites'
     ],
     /*
