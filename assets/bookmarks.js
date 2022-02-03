@@ -11,41 +11,17 @@ var bookmarks = [
        }
    },
    {
+       Name: 'Calendar',
+       ImgUrl: '/img/calendar.png',
+       Url: 'https://calendar.google.com',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Jira',
        ImgUrl: '/img/jira.png',
        Url: 'https://jungledisk-pe.atlassian.net/jira/software/projects/JD/boards/1/backlog',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Msp Portal Ui',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/Jungledisk/Msp-Portal-Ui',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Msp Portal Api',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/Jungledisk/Msp-Api',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Identity Server',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/Jungledisk/IdentityServer',
-       PageSections: {
-           Work:'Work'
-       }
-   },
-   {
-       Name: 'Secure Dot',
-       ImgUrl: '/img/github.png',
-       Url: 'https://github.com/Jungledisk/secure.jungledisk.com',
        PageSections: {
            Work:'Work'
        }
@@ -79,6 +55,54 @@ var bookmarks = [
        }
    },
    {
+       Name: 'MSP Portal (QA)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://qa-msp.jungledisk.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Secure Dot (QE)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://qe-secure.jungledisk.com',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'MSP Portal (Prod)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://msp.jungledisk.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Secure Dot (Prod)',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://secure.jungledisk.com',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Admin Tool',
+       ImgUrl: '/img/jd.ico',
+       Url: 'https://admin.jungledisk.com',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
+       Name: 'Google Cloud',
+       ImgUrl: '/img/gcp.png',
+       Url: 'https://console.cloud.google.com/',
+       PageSections: {
+           Work:'Work'
+       }
+   },
+   {
        Name: 'Todoist',
        ImgUrl: '/img/todoist.png',
        Url: 'https://en.todoist.com/',
@@ -105,49 +129,33 @@ var bookmarks = [
        }
    },
    {
-       Name: 'MSP Portal (QA)',
-       ImgUrl: '/img/jd.ico',
-       Url: 'https://qa-msp.jungledisk.com/',
+       Name: 'Msp Portal Ui',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/Msp-Portal-Ui',
        PageSections: {
            Work:'Dev'
        }
    },
    {
-       Name: 'Secure Dot (QE)',
-       ImgUrl: '/img/jd.ico',
-       Url: 'https://qe-secure.jungledisk.com',
+       Name: 'Msp Portal Api',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/Msp-Api',
        PageSections: {
            Work:'Dev'
        }
    },
    {
-       Name: 'MSP Portal (Prod)',
-       ImgUrl: '/img/jd.ico',
-       Url: 'https://msp.jungledisk.com/',
+       Name: 'Identity Server',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/IdentityServer',
        PageSections: {
            Work:'Dev'
        }
    },
    {
-       Name: 'Secure Dot (Prod)',
-       ImgUrl: '/img/jd.ico',
-       Url: 'https://secure.jungledisk.com',
-       PageSections: {
-           Work:'Dev'
-       }
-   },
-   {
-       Name: 'Admin Tool',
-       ImgUrl: '/img/jd.ico',
-       Url: 'https://admin.jungledisk.com',
-       PageSections: {
-           Work:'Dev'
-       }
-   },
-   {
-       Name: 'Google Cloud',
-       ImgUrl: '/img/gcp.png',
-       Url: 'https://console.cloud.google.com/',
+       Name: 'Secure Dot',
+       ImgUrl: '/img/github.png',
+       Url: 'https://github.com/Jungledisk/secure.jungledisk.com',
        PageSections: {
            Work:'Dev'
        }
@@ -280,9 +288,9 @@ var bookmarks = [
        }
    },
    {
-       Name: 'Tidal',
-       ImgUrl: '/img/tidal.png',
-       Url: 'https://tidal.com',
+       Name: 'YouTube Music',
+       ImgUrl: '/img/ytmusic.png',
+       Url: 'https://music.youtube.com',
        PageSections: {
            Home:'Fun',
            Work:'Fun'
