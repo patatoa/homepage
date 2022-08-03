@@ -40,4 +40,7 @@ jobs:
       uses: google-github-actions/setup-gcloud@v0
 
     - id: 'deploy'
-      uses: google-github-actions/deploy-appengine@main
+      uses: google-github-actions/deploy-appengine@v0
+      with:
+        project_id: ${{ secrets.PROJECT_ID}}
+
