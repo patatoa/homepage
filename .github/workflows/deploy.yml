@@ -36,10 +36,10 @@ jobs:
         service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}'
         project_id: ${{ secrets.PROJECT_ID}}
 
-    # - name: Google setup and deploy
-    #   uses: google-github-actions/setup-gcloud@v0
-    #   with:
-    #     project_id: ${{ secrets.PROJECT_ID}}
+    - name: Google setup and deploy
+      uses: google-github-actions/setup-gcloud@v0
+      with:
+        project_id: ${{ secrets.PROJECT_ID}}
 
     - id: 'deploy'
       uses: google-github-actions/deploy-appengine@v0
