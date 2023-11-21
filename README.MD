@@ -4,7 +4,7 @@ This is a personal homepage. This contains a categeorized list of my most freque
 
 ## Installation
 
-Pull. 
+Pull.
 ```
 cd ~/dir/of/homepage
 npm install
