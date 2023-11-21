@@ -1,48 +1,37 @@
-name: deploy
+name: Build and Deploy to S3
 
 on:
   push:
     branches:
       - master
-  workflow_dispatch:
 
 jobs:
-  build:
-    permissions:
-      contents: 'read'
-      id-token: 'write'
+  build-and-deploy:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [16.x]
-
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Use Node.js 20.x
       uses: actions/setup-node@v2
       with:
-        node-version: ${{ matrix.node-version }}
+        node-version: 20.x
         cache: 'npm'
 
-    - name: "building"
+    - name: Install dependencies
       run: npm ci
-    - run: npm run build --if-present
 
-    - id: auth
-      uses: google-github-actions/auth@v0
+    - name: Build site
+      run: npm run build
+
+    - name: Deploy to S3
+      uses: jakejarvis/s3-sync-action@master
       with:
-        workload_identity_provider: "${{secrets.GCP_PROVIDER}}"
-        service_account: "${{ secrets.GCP_SERVICE_ACCOUNT }}"
-        # project_id: ${{ secrets.PROJECT_ID}}
-
-    # - name: Google setup and deploy
-    #   uses: google-github-actions/setup-gcloud@v0
-    #   with:
-    #     project_id: ${{ secrets.PROJECT_ID}}
-
-    - id: 'deploy'
-      uses: google-github-actions/deploy-appengine@v0
-      # with:
-      #   project_id: ${{ secrets.PROJECT_ID}}
-
+        args: --acl public-read --follow-symlinks --delete
+      env:
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        AWS_REGION: ${{ secrets.AWS_REGION }}
+        SOURCE_DIR: 'dist'

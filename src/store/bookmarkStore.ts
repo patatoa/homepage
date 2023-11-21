@@ -312,25 +312,25 @@ const bookmarks: BookmarkInternal[] = [
   {
     name: 'Msp Portal Ui',
     src: github,
-    url: import.meta.env.GITHUB_MSP_PORTAL as string,
+    url: import.meta.env.REPO_MSP_PORTAL as string,
     workSection: 'Dev'
   },
   {
     name: 'Msp Portal Api',
     src: github,
-    url: import.meta.env.GITHUB_MSP_API as string,
+    url: import.meta.env.REPO_MSP_API as string,
     workSection: 'Dev'
   },
   {
     name: 'Identity Server',
     src: github,
-    url: import.meta.env.GITHUB_IDENTITY_SERVER as string,
+    url: import.meta.env.REPO_IDENTITY_SERVER as string,
     workSection: 'Dev'
   },
   {
     name: 'Secure Dot',
     src: github,
-    url: import.meta.env.GITHUB_SECURE_DOT as string,
+    url: import.meta.env.REPO_SECURE_DOT as string,
     workSection: 'Dev'
   },
 ]
