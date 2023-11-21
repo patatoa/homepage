@@ -24,6 +24,26 @@ jobs:
 
     - name: Build site
       run: npm run build
+      env:
+        NODE_ENV: production
+        RUTORRENT: ${{ secrets.RUTORRENT }}
+        REDACTED: ${{ secrets.REDACTED }}
+        BTN: ${{ secrets.BTN }}
+        PTP: ${{ secrets.PTP }}
+        JIRA_WORK: ${{ secrets.JIRA_WORK }}
+        JIRA_NED: ${{ secrets.JIRA_NED }}
+        MSP_QA: ${{ secrets.MSP_QA }}
+        MSP_PROD: ${{ secrets.MSP_PROD }}
+        SECURE_DOT_QA: ${{ secrets.SECURE_DOT_QA }}
+        SECURE_DOT_PROD: ${{ secrets.SECURE_DOT_PROD }}
+        ADMIN_TOOL: ${{ secrets.ADMIN_TOOL }}
+        REPO_MSP_PORTAL: ${{ secrets.REPO_MSP_PORTAL }}
+        REPO_MSP_API: ${{ secrets.REPO_MSP_API }}
+        REPO_IDENTITY_SERVER: ${{ secrets.REPO_IDENTITY_SERVER }}
+        REPO_SECURE_DOT: ${{ secrets.REPO_SECURE_DOT }}
+        REPO_CYBERFORTRESS: ${{ secrets.REPO_CYBERFORTRESS }}
+        SLAB: ${{ secrets.SLAB }}
+        PUBLIC_WEATHER_API_KEY: ${{ secrets.PUBLIC_WEATHER_API_KEY }}
 
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master
