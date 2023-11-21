@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import Title from '../components/Title';
+import Weather from '../components/Weather';
+import { GetHomeBookmarks } from '../store/bookmarkStore';
+
+const productivityBookmarks = GetHomeBookmarks('Productivity');
+const oldSchoolForumsBookmarks = GetHomeBookmarks('Old School Forums');
+const redditBookmarks = GetHomeBookmarks('Reddit');
+const readingBookmarks = GetHomeBookmarks('Reading');
+const torrentBookmarks = GetHomeBookmarks('Torrents');
+const entertainmentBookmarks = GetHomeBookmarks('Entertainment');
+const devBookmarks = GetHomeBookmarks('Dev');
+---
+
+<Layout title="Home Homepage">
+	<main>
+    <Title client:load/>
+    <div class="text-right p-4">
+      <a href="/work" class="text-gray-200">View Work Bookmarks</a>
+    </div>
+    <div class="flex justify-center flex-wrap md:justify-start gap-4">
+      <Section name="Productivity" bookmarks={productivityBookmarks} />
+      <Section name="Reddit" bookmarks={redditBookmarks} />
+      <Section name="Old School" bookmarks={oldSchoolForumsBookmarks} />
+      <Section name="Entertainment" bookmarks={entertainmentBookmarks} />
+      <Section name="Reading" bookmarks={readingBookmarks} />
+      <Section name="Dev" bookmarks={devBookmarks} />
+      <Section name="Torrents" bookmarks={torrentBookmarks} />
+    </div>
+    <Weather client:visible/>
+  </main>
+</Layout>

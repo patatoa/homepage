@@ -1,0 +1,20 @@
+---
+import {type Bookmark as BookmarkType } from '../types/types';
+import Bookmark from '../components/Bookmark.astro';
+
+interface Section {
+  name: string;
+  bookmarks: BookmarkType[];
+}
+const { name, bookmarks } = Astro.props;
+---
+<div class="list-container min-w-[20%] p-4 max-w-sm mx-auto bg-white rounded-lg shadow-md">
+    <h2 class="text-3xl font-bold underline">
+      { name }
+    </h2>
+  <ul class="list-styled list-inside space-y-2">
+    {bookmarks.map((bookmark: BookmarkType) => (
+      <Bookmark name={bookmark.name} url={bookmark.url} src={bookmark.src} />
+    ))}
+  </ul>
+</div>

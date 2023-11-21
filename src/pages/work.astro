@@ -1,0 +1,34 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import Title from '../components/Title';
+import { GetWorkBookmarks } from '../store/bookmarkStore';
+import Weather from '../components/Weather';
+
+const workBookmarks = GetWorkBookmarks('Work');
+const devBookmarks = GetWorkBookmarks('Dev');
+const portalBookmarks = GetWorkBookmarks('Portals');
+const infraBookmarks = GetWorkBookmarks('Infrastructure');
+const redditBookmarks = GetWorkBookmarks('Reddit');
+const newsBookmarks = GetWorkBookmarks('News');
+const funBookmarks = GetWorkBookmarks('Fun');
+---
+
+<Layout title="Work Homepage">
+	<main>
+    <Title client:load/>
+    <div class="text-right p-4">
+      <a href="/" class="text-gray-200">View Home Bookmarks</a>
+    </div>
+    <div class="flex justify-center flex-wrap md:justify-start gap-4">
+      <Section name="Work" bookmarks={workBookmarks} />
+      <Section name="Dev" bookmarks={devBookmarks} />
+      <Section name="Portals" bookmarks={portalBookmarks} />
+      <Section name="Infrastructure" bookmarks={infraBookmarks} />
+      <Section name="Reddit" bookmarks={redditBookmarks} />
+      <Section name="News" bookmarks={newsBookmarks} />
+      <Section name="Fun" bookmarks={funBookmarks} />
+    </div>
+    <Weather client:visible/>
+  </main>
+</Layout>
