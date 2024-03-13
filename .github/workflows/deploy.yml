@@ -44,6 +44,7 @@ jobs:
         REPO_CYBERFORTRESS: ${{ secrets.REPO_CYBERFORTRESS }}
         SLAB: ${{ secrets.SLAB }}
         PUBLIC_WEATHER_API_KEY: ${{ secrets.PUBLIC_WEATHER_API_KEY }}
+        EDKIBANA: ${{ secrets.EDKIBANA }}
 
     - name: Deploy to S3
       uses: jakejarvis/s3-sync-action@master

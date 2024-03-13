@@ -35,6 +35,7 @@ import bitwarden from '../img/bitwarden.png';
 import bloom from '../img/bloom.jpeg';
 import elephantdrive from '../img/elephantdrive1.ico';
 import elephantdrivepartnerportal from '../img/elephantdrive2.ico';
+import kibana from '../img/elastic-kibana.svg';
 
 interface BookmarkInternal extends Bookmark {
   workSection?: string;
@@ -331,6 +332,12 @@ const bookmarks: BookmarkInternal[] = [
     name: 'Secure Dot',
     src: github,
     url: import.meta.env.REPO_SECURE_DOT as string,
+    workSection: 'Dev'
+  },
+  {
+    name: 'Kibana (ED)',
+    src: kibana,
+    url: import.meta.env.EDKIBANA as string,
     workSection: 'Dev'
   },
 ]
