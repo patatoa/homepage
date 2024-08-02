@@ -31,7 +31,7 @@ jobs:
         BTN: ${{ secrets.BTN }}
         PTP: ${{ secrets.PTP }}
         JIRA_WORK: ${{ secrets.JIRA_WORK }}
-        JIRA_NED: ${{ secrets.JIRA_NED }}
+        CONFLUENCE: ${{ secrets.CONFLUENCE }}
         MSP_QA: ${{ secrets.MSP_QA }}
         MSP_PROD: ${{ secrets.MSP_PROD }}
         SECURE_DOT_QA: ${{ secrets.SECURE_DOT_QA }}
