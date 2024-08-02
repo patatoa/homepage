@@ -76,9 +76,9 @@ const bookmarks: BookmarkInternal[] = [
     workSection: 'Work'
   },
   {
-    name: 'NED',
+    name: 'Confluence',
     src: jira,
-    url: import.meta.env.JIRA_NED as string,
+    url: import.meta.env.CONFLUENCE as string,
     workSection: 'Work'
   },
   {
