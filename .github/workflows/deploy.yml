@@ -1,6 +1,7 @@
 name: Build and Deploy to S3
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
@@ -14,7 +15,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Use Node.js 20.x
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v4
       with:
         node-version: 20.x
         cache: 'npm'
@@ -41,6 +42,8 @@ jobs:
         REPO_MSP_API: ${{ secrets.REPO_MSP_API }}
         REPO_IDENTITY_SERVER: ${{ secrets.REPO_IDENTITY_SERVER }}
         REPO_SECURE_DOT: ${{ secrets.REPO_SECURE_DOT }}
+        REPO_FORGEJO: ${{ secrets.REPO_FORGEJO }}
+        REPO_NETDATA: ${{ secrets.REPO_NETDATA }}
         REPO_CYBERFORTRESS: ${{ secrets.REPO_CYBERFORTRESS }}
         SLAB: ${{ secrets.SLAB }}
         PUBLIC_WEATHER_API_KEY: ${{ secrets.PUBLIC_WEATHER_API_KEY }}
