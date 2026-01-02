@@ -6,9 +6,7 @@ import Weather from '../components/Weather';
 import { GetHomeBookmarks } from '../store/bookmarkStore';
 
 const productivityBookmarks = GetHomeBookmarks('Productivity');
-const oldSchoolForumsBookmarks = GetHomeBookmarks('Old School Forums');
 const redditBookmarks = GetHomeBookmarks('Reddit');
-const readingBookmarks = GetHomeBookmarks('Reading');
 const torrentBookmarks = GetHomeBookmarks('Torrents');
 const entertainmentBookmarks = GetHomeBookmarks('Entertainment');
 const devBookmarks = GetHomeBookmarks('Dev');
@@ -23,9 +21,7 @@ const devBookmarks = GetHomeBookmarks('Dev');
     <div class="flex justify-center flex-wrap md:justify-start gap-4">
       <Section name="Productivity" bookmarks={productivityBookmarks} />
       <Section name="Reddit" bookmarks={redditBookmarks} />
-      <Section name="Old School" bookmarks={oldSchoolForumsBookmarks} />
       <Section name="Entertainment" bookmarks={entertainmentBookmarks} />
-      <Section name="Reading" bookmarks={readingBookmarks} />
       <Section name="Dev" bookmarks={devBookmarks} />
       <Section name="Torrents" bookmarks={torrentBookmarks} />
     </div>
