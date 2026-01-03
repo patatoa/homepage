@@ -3,6 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Section from '../components/Section.astro';
 import Title from '../components/Title';
 import Weather from '../components/Weather';
+import StatusRow from '../components/StatusRow';
+import forgejoIcon from '../img/forgejo.png?url';
+import netdataIcon from '../img/netdata.png?url';
+import immichIcon from '../img/immich.png?url';
+import vaultwardenIcon from '../img/vaultwarden.png?url';
+import syncthingIcon from '../img/syncthing.png?url';
 import { GetHomeBookmarks } from '../store/bookmarkStore';
 
 const productivityBookmarks = GetHomeBookmarks('Productivity');
@@ -10,6 +16,33 @@ const redditBookmarks = GetHomeBookmarks('Reddit');
 const torrentBookmarks = GetHomeBookmarks('Torrents');
 const entertainmentBookmarks = GetHomeBookmarks('Entertainment');
 const devBookmarks = GetHomeBookmarks('Dev');
+const statusServices = [
+  {
+    name: 'Forgejo',
+    url: import.meta.env.REPO_FORGEJO as string,
+    icon: forgejoIcon,
+  },
+  {
+    name: 'Netdata',
+    url: import.meta.env.REPO_NETDATA as string,
+    icon: netdataIcon,
+  },
+  {
+    name: 'Immich',
+    url: import.meta.env.IMMICH as string,
+    icon: immichIcon,
+  },
+  {
+    name: 'VaultWarden',
+    url: import.meta.env.VAULTWARDEN as string,
+    icon: vaultwardenIcon,
+  },
+  {
+    name: 'SyncThing',
+    url: import.meta.env.SYNCTHING as string,
+    icon: syncthingIcon,
+  },
+];
 ---
 
 <Layout title="Home Homepage">
@@ -25,6 +58,7 @@ const devBookmarks = GetHomeBookmarks('Dev');
       <Section name="Dev" bookmarks={devBookmarks} />
       <Section name="Torrents" bookmarks={torrentBookmarks} />
     </div>
+    <StatusRow client:visible services={statusServices} />
     <Weather client:visible/>
   </main>
 </Layout>
