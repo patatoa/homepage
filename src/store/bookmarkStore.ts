@@ -39,6 +39,9 @@ import kibana from "../img/elastic-kibana.svg";
 import forgejo from "../img/forgejo.ico";
 import netdata from "../img/netdata.png";
 import plex from "../img/plex.png";
+import immich from "../img/immich.png";
+import vaultwarden from "../img/vaultwarden.png";
+import syncthing from "../img/syncthing.png";
 
 interface BookmarkInternal extends Bookmark {
   workSection?: string;
@@ -122,6 +125,24 @@ const bookmarks: BookmarkInternal[] = [
     homeSection: "Productivity",
     workSection: "Dev",
   },
+  {
+    name: "Immich (home only)",
+    url: import.meta.env.IMMICH as string,
+    src: immich,
+    homeSection: "Productivity",
+  },
+  {
+    name: "VaultWarden (tailscale)",
+    url: import.meta.env.VAULTWARDEN as string,
+    src: vaultwarden,
+    homeSection: "Productivity",
+  },
+  {
+    name: "SyncThing (tailscale)",
+    url: import.meta.env.SYNCTHING as string,
+    src: syncthing,
+    homeSection: "Productivity",
+  },
 
   {
     name: "Reddit",
@@ -149,48 +170,7 @@ const bookmarks: BookmarkInternal[] = [
     name: "Spurs Talk",
     url: "http://www.spurstalk.com/forums/forumdisplay.php?f=2",
     src: spurs,
-    homeSection: "Old School Forums",
-    workSection: "News",
-  },
-  {
-    name: "Something Awful",
-    src: somethingawful,
-    url: "http://forums.somethingawful.com/",
-    homeSection: "Old School Forums",
-  },
-  {
-    name: "Electric Mole",
-    src: electricmole,
-    url: "http://forums.electricmole.net/",
-    homeSection: "Old School Forums",
-  },
-
-  {
-    name: "Washington Post",
-    src: wapo,
-    url: "https://www.washingtonpost.com",
-    homeSection: "Reading",
-    workSection: "News",
-  },
-  {
-    name: "Express News",
-    src: expressnews,
-    url: "https://www.expressnews.com",
-    homeSection: "Reading",
-    workSection: "News",
-  },
-  {
-    name: "Hacker News",
-    src: hackernews,
-    url: "https://news.ycombinator.com",
-    homeSection: "Reading",
-    workSection: "News",
-  },
-  {
-    name: "The Ringer",
-    src: theringer,
-    url: "https://www.theringer.com/nba",
-    homeSection: "Reading",
+    homeSection: "Reddit",
     workSection: "News",
   },
 
@@ -262,49 +242,6 @@ const bookmarks: BookmarkInternal[] = [
   },
 
   {
-    name: "MSP Portal (QA)",
-    src: jungledisk,
-    url: "https://qa-msp.jungledisk.com/",
-    workSection: "Portals",
-  },
-  {
-    name: "Secure Dot (QE)",
-    src: jungledisk,
-    url: "https://qe-secure.jungledisk.com",
-    workSection: "Portals",
-  },
-  {
-    name: "MSP Portal (Prod)",
-    src: jungledisk,
-    url: "https://msp.jungledisk.com/",
-    workSection: "Portals",
-  },
-  {
-    name: "Secure Dot (Prod)",
-    src: jungledisk,
-    url: "https://secure.jungledisk.com",
-    workSection: "Portals",
-  },
-  {
-    name: "Admin Tool",
-    src: jungledisk,
-    url: "https://admin.jungledisk.com",
-    workSection: "Portals",
-  },
-  {
-    name: "User Portal",
-    src: elephantdrive,
-    url: "https://vault.elephantdrive.com/",
-    workSection: "Portals",
-  },
-  {
-    name: "Partner Portal",
-    src: elephantdrivepartnerportal,
-    url: "https://partners.elephantdrive.com/",
-    workSection: "Portals",
-  },
-
-  {
     name: "Google Cloud",
     src: gcp,
     url: "https://console.cloud.google.com/",
@@ -317,49 +254,6 @@ const bookmarks: BookmarkInternal[] = [
     url: "https://us-east-1.console.aws.amazon.com/console/home?region=us-east-1#",
     workSection: "Infrastructure",
     homeSection: "Dev",
-  },
-  {
-    name: "DataDog",
-    src: datadog,
-    url: "https://app.datadoghq.com/apm/home?env=production",
-    workSection: "Infrastructure",
-  },
-  {
-    name: "Slab",
-    src: slab,
-    url: import.meta.env.SLAB as string,
-    workSection: "Infrastructure",
-  },
-
-  {
-    name: "Msp Portal Ui",
-    src: github,
-    url: import.meta.env.REPO_MSP_PORTAL as string,
-    workSection: "Dev",
-  },
-  {
-    name: "Msp Portal Api",
-    src: github,
-    url: import.meta.env.REPO_MSP_API as string,
-    workSection: "Dev",
-  },
-  {
-    name: "Identity Server",
-    src: github,
-    url: import.meta.env.REPO_IDENTITY_SERVER as string,
-    workSection: "Dev",
-  },
-  {
-    name: "Secure Dot",
-    src: github,
-    url: import.meta.env.REPO_SECURE_DOT as string,
-    workSection: "Dev",
-  },
-  {
-    name: "Kibana (ED)",
-    src: kibana,
-    url: import.meta.env.EDKIBANA as string,
-    workSection: "Dev",
   },
 ];
 const getBookmarks = (type: "Home" | "Work", section: string): Bookmark[] => {

@@ -41,17 +41,22 @@ interface WeatherData {
     tz_id: string;
   };
 };
-const fetchData = async(): Promise<WeatherData> => {
-  const apiUrl = `http://api.weatherapi.com/v1/current.json\?key\=${import.meta.env.PUBLIC_WEATHER_API_KEY}\&q\=78250`
+const fetchData = async (): Promise<WeatherData> => {
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${import.meta.env.PUBLIC_WEATHER_API_KEY}&q=78250`;
   const response = await fetch(apiUrl);
+  if (!response.ok) {
+    throw new Error(`Weather API error: ${response.status}`);
+  }
   const data = await response.json();
   return data;
-}
+};
 const Weather = () => {
   const [weatherData, setWeatherData] = useState<WeatherData | null>(null);
-    useEffect(() => {
-      fetchData().then(response => setWeatherData(response));
-    }, []);
+  useEffect(() => {
+    fetchData()
+      .then((response) => setWeatherData(response))
+      .catch(() => setWeatherData(null));
+  }, []);
 
     if (weatherData === null) {
       return <div></div>;

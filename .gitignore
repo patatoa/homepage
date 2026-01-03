@@ -23,3 +23,6 @@ pnpm-debug.log*
 old
 .vscode
 .vscode/launch.json
+
+.env*
+.env
