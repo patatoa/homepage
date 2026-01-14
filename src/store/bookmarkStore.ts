@@ -42,6 +42,7 @@ import plex from "../img/plex.png";
 import immich from "../img/immich.png";
 import vaultwarden from "../img/vaultwarden.png";
 import syncthing from "../img/syncthing.png";
+import qbittorrent from "../img/qbittorrent.png";
 
 interface BookmarkInternal extends Bookmark {
   workSection?: string;
@@ -174,6 +175,12 @@ const bookmarks: BookmarkInternal[] = [
     workSection: "News",
   },
 
+  {
+    name: "qBittorrent",
+    src: qbittorrent,
+    url: import.meta.env.QBITTORRENT as string,
+    homeSection: "Torrents",
+  },
   {
     name: "rTorrent",
     src: rutorrent,
