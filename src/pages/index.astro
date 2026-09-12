@@ -4,12 +4,15 @@ import Section from '../components/Section.astro';
 import Title from '../components/Title';
 import Weather from '../components/Weather';
 import StatusRow from '../components/StatusRow';
+import CodexUsageWidget from '../components/CodexUsageWidget';
 import forgejoIcon from '../img/forgejo.png?url';
 import netdataIcon from '../img/netdata.png?url';
 import immichIcon from '../img/immich.png?url';
 import vaultwardenIcon from '../img/vaultwarden.png?url';
 import syncthingIcon from '../img/syncthing.png?url';
+import chatgptIcon from '../img/ChatGPT_logo.svg.png?url';
 import { GetHomeBookmarks } from '../store/bookmarkStore';
+import { CODEX_USAGE_URL } from '../config/services';
 
 const productivityBookmarks = GetHomeBookmarks('Productivity');
 const redditBookmarks = GetHomeBookmarks('Reddit');
@@ -17,6 +20,11 @@ const torrentBookmarks = GetHomeBookmarks('Torrents');
 const entertainmentBookmarks = GetHomeBookmarks('Entertainment');
 const devBookmarks = GetHomeBookmarks('Dev');
 const statusServices = [
+  {
+    name: 'Codex Usage',
+    url: CODEX_USAGE_URL,
+    icon: chatgptIcon,
+  },
   {
     name: 'Forgejo',
     url: import.meta.env.REPO_FORGEJO as string,
@@ -58,6 +66,7 @@ const statusServices = [
       <Section name="Dev" bookmarks={devBookmarks} />
       <Section name="Torrents" bookmarks={torrentBookmarks} />
     </div>
+    <CodexUsageWidget client:load url={CODEX_USAGE_URL} icon={chatgptIcon} />
     <StatusRow client:visible services={statusServices} />
     <Weather client:visible/>
   </main>

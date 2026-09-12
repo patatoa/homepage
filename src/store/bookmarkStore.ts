@@ -43,6 +43,7 @@ import immich from "../img/immich.png";
 import vaultwarden from "../img/vaultwarden.png";
 import syncthing from "../img/syncthing.png";
 import qbittorrent from "../img/qbittorrent.png";
+import { CODEX_USAGE_URL } from "../config/services";
 
 interface BookmarkInternal extends Bookmark {
   workSection?: string;
@@ -117,6 +118,12 @@ const bookmarks: BookmarkInternal[] = [
     name: "Netdata (tailscale)",
     url: import.meta.env.REPO_NETDATA as string,
     src: netdata,
+    homeSection: "Dev",
+  },
+  {
+    name: "Codex Usage (tailscale)",
+    url: CODEX_USAGE_URL,
+    src: chatgpt,
     homeSection: "Dev",
   },
   {
